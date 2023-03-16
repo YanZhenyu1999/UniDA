@@ -1,0 +1,1526 @@
+nohup: ignoring input
+train_ovanet.py:54: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  conf = yaml.load(open(config_file))
+train_ovanet.py:55: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  save_config = yaml.load(open(config_file))
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/torchvision/transforms/transforms.py:280: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+use balanced loader
+record in record/ovanet/image_to_objectnet_imagenet_c_r_o/train_ovanet_/data1/jiaming/data/imagenet/train/2objectnet_c_r_o_resnet50_hp_0.1 
+selected network resnet50
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+train start!
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 0/10000 	 Loss Source: 7.0375 Loss Open: 1.8815 Loss Open Source Positive: 0.8171 Loss Open Source Negative: 2.9458 Loss Open Target: 0.618238
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 0', 'acc close all 0.062233285917496446', 'roc 0.48475049858079466']
+acc all 0.062233285917496446 h_score 0.48475049858079466 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 100/10000 	 Loss Source: 5.6455 Loss Open: 1.1653 Loss Open Source Positive: 0.9593 Loss Open Source Negative: 1.3713 Loss Open Target: 0.544193
+Train 200/10000 	 Loss Source: 4.6045 Loss Open: 0.9786 Loss Open Source Positive: 0.8990 Loss Open Source Negative: 1.0581 Loss Open Target: 0.427445
+Train 300/10000 	 Loss Source: 3.3475 Loss Open: 0.7807 Loss Open Source Positive: 0.7543 Loss Open Source Negative: 0.8071 Loss Open Target: 0.351371
+Train 400/10000 	 Loss Source: 2.7117 Loss Open: 0.8812 Loss Open Source Positive: 0.9107 Loss Open Source Negative: 0.8516 Loss Open Target: 0.299233
+Train 500/10000 	 Loss Source: 2.1725 Loss Open: 0.8256 Loss Open Source Positive: 0.7971 Loss Open Source Negative: 0.8542 Loss Open Target: 0.260684
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 500', 'acc close all 22.599573257467995', 'roc 0.5151666443029908']
+acc all 22.599573257467995 h_score 0.5151666443029908 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 600/10000 	 Loss Source: 2.1243 Loss Open: 0.8358 Loss Open Source Positive: 0.9199 Loss Open Source Negative: 0.7517 Loss Open Target: 0.238408
+Train 700/10000 	 Loss Source: 1.6555 Loss Open: 0.7288 Loss Open Source Positive: 0.7249 Loss Open Source Negative: 0.7327 Loss Open Target: 0.227086
+Train 800/10000 	 Loss Source: 1.6145 Loss Open: 0.6917 Loss Open Source Positive: 0.7324 Loss Open Source Negative: 0.6509 Loss Open Target: 0.211045
+Train 900/10000 	 Loss Source: 1.1294 Loss Open: 0.6821 Loss Open Source Positive: 0.6776 Loss Open Source Negative: 0.6865 Loss Open Target: 0.202301
+Train 1000/10000 	 Loss Source: 1.8549 Loss Open: 0.7025 Loss Open Source Positive: 0.8338 Loss Open Source Negative: 0.5711 Loss Open Target: 0.192551
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1000', 'acc close all 27.836059743954483', 'roc 0.4808328828808645']
+acc all 27.836059743954483 h_score 0.4808328828808645 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1100/10000 	 Loss Source: 1.3867 Loss Open: 0.7563 Loss Open Source Positive: 0.8645 Loss Open Source Negative: 0.6481 Loss Open Target: 0.181094
+Train 1200/10000 	 Loss Source: 1.6445 Loss Open: 0.7232 Loss Open Source Positive: 0.9063 Loss Open Source Negative: 0.5401 Loss Open Target: 0.183479
+Train 1300/10000 	 Loss Source: 1.1051 Loss Open: 0.5927 Loss Open Source Positive: 0.6116 Loss Open Source Negative: 0.5738 Loss Open Target: 0.173197
+Train 1400/10000 	 Loss Source: 1.5037 Loss Open: 0.7153 Loss Open Source Positive: 0.8335 Loss Open Source Negative: 0.5970 Loss Open Target: 0.169757
+Train 1500/10000 	 Loss Source: 1.1048 Loss Open: 0.6741 Loss Open Source Positive: 0.6457 Loss Open Source Negative: 0.7026 Loss Open Target: 0.168104
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1500', 'acc close all 28.38282361308677', 'roc 0.4832880973493231']
+acc all 28.38282361308677 h_score 0.4832880973493231 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1600/10000 	 Loss Source: 1.6152 Loss Open: 0.7564 Loss Open Source Positive: 0.9247 Loss Open Source Negative: 0.5881 Loss Open Target: 0.162580
+Train 1700/10000 	 Loss Source: 1.1686 Loss Open: 0.6699 Loss Open Source Positive: 0.7165 Loss Open Source Negative: 0.6233 Loss Open Target: 0.163057
+Train 1800/10000 	 Loss Source: 1.4872 Loss Open: 0.7193 Loss Open Source Positive: 0.7694 Loss Open Source Negative: 0.6693 Loss Open Target: 0.158560
+Train 1900/10000 	 Loss Source: 1.1982 Loss Open: 0.6298 Loss Open Source Positive: 0.7431 Loss Open Source Negative: 0.5166 Loss Open Target: 0.150345
+Train 2000/10000 	 Loss Source: 0.8399 Loss Open: 0.6069 Loss Open Source Positive: 0.5997 Loss Open Source Negative: 0.6141 Loss Open Target: 0.151797
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2000', 'acc close all 29.071834992887624', 'roc 0.4746733831062371']
+acc all 29.071834992887624 h_score 0.4746733831062371 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2100/10000 	 Loss Source: 1.0064 Loss Open: 0.6391 Loss Open Source Positive: 0.6439 Loss Open Source Negative: 0.6343 Loss Open Target: 0.142073
+Train 2200/10000 	 Loss Source: 0.9845 Loss Open: 0.6519 Loss Open Source Positive: 0.7135 Loss Open Source Negative: 0.5903 Loss Open Target: 0.141612
+Train 2300/10000 	 Loss Source: 1.1759 Loss Open: 0.6559 Loss Open Source Positive: 0.7129 Loss Open Source Negative: 0.5988 Loss Open Target: 0.136919
+Train 2400/10000 	 Loss Source: 0.9944 Loss Open: 0.5787 Loss Open Source Positive: 0.6050 Loss Open Source Negative: 0.5524 Loss Open Target: 0.140168
+Train 2500/10000 	 Loss Source: 1.0447 Loss Open: 0.6157 Loss Open Source Positive: 0.6566 Loss Open Source Negative: 0.5748 Loss Open Target: 0.133364
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2500', 'acc close all 30.12535561877667', 'roc 0.4773377272103042']
+acc all 30.12535561877667 h_score 0.4773377272103042 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2600/10000 	 Loss Source: 0.5918 Loss Open: 0.4990 Loss Open Source Positive: 0.4656 Loss Open Source Negative: 0.5324 Loss Open Target: 0.135345
+Train 2700/10000 	 Loss Source: 0.9521 Loss Open: 0.6255 Loss Open Source Positive: 0.7369 Loss Open Source Negative: 0.5140 Loss Open Target: 0.130995
+Train 2800/10000 	 Loss Source: 1.0554 Loss Open: 0.5863 Loss Open Source Positive: 0.6645 Loss Open Source Negative: 0.5081 Loss Open Target: 0.132232
+Train 2900/10000 	 Loss Source: 1.4693 Loss Open: 0.6829 Loss Open Source Positive: 0.8022 Loss Open Source Negative: 0.5637 Loss Open Target: 0.131621
+Train 3000/10000 	 Loss Source: 1.5196 Loss Open: 0.7516 Loss Open Source Positive: 0.9646 Loss Open Source Negative: 0.5385 Loss Open Target: 0.127514
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3000', 'acc close all 30.2275960170697', 'roc 0.46971743838706387']
+acc all 30.2275960170697 h_score 0.46971743838706387 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3100/10000 	 Loss Source: 0.9914 Loss Open: 0.6049 Loss Open Source Positive: 0.6815 Loss Open Source Negative: 0.5283 Loss Open Target: 0.126134
+Train 3200/10000 	 Loss Source: 0.9615 Loss Open: 0.5477 Loss Open Source Positive: 0.6382 Loss Open Source Negative: 0.4571 Loss Open Target: 0.128595
+Train 3300/10000 	 Loss Source: 1.3326 Loss Open: 0.6476 Loss Open Source Positive: 0.6607 Loss Open Source Negative: 0.6345 Loss Open Target: 0.121530
+Train 3400/10000 	 Loss Source: 0.9856 Loss Open: 0.5905 Loss Open Source Positive: 0.6475 Loss Open Source Negative: 0.5335 Loss Open Target: 0.121966
+Train 3500/10000 	 Loss Source: 1.0434 Loss Open: 0.5595 Loss Open Source Positive: 0.7072 Loss Open Source Negative: 0.4118 Loss Open Target: 0.122554
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3500', 'acc close all 31.001066856330013', 'roc 0.4865485858022791']
+acc all 31.001066856330013 h_score 0.4865485858022791 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3600/10000 	 Loss Source: 1.0385 Loss Open: 0.6254 Loss Open Source Positive: 0.7130 Loss Open Source Negative: 0.5379 Loss Open Target: 0.122568
+Train 3700/10000 	 Loss Source: 0.7173 Loss Open: 0.5265 Loss Open Source Positive: 0.5443 Loss Open Source Negative: 0.5087 Loss Open Target: 0.120323
+Train 3800/10000 	 Loss Source: 0.6399 Loss Open: 0.5143 Loss Open Source Positive: 0.4804 Loss Open Source Negative: 0.5483 Loss Open Target: 0.115839
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 3900/10000 	 Loss Source: 0.7536 Loss Open: 0.5456 Loss Open Source Positive: 0.5930 Loss Open Source Negative: 0.4983 Loss Open Target: 0.117350
+Train 4000/10000 	 Loss Source: 1.4979 Loss Open: 0.7071 Loss Open Source Positive: 0.7170 Loss Open Source Negative: 0.6971 Loss Open Target: 0.116122
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4000', 'acc close all 30.983285917496445', 'roc 0.4610626390715861']
+acc all 30.983285917496445 h_score 0.4610626390715861 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4100/10000 	 Loss Source: 0.8406 Loss Open: 0.5467 Loss Open Source Positive: 0.5609 Loss Open Source Negative: 0.5326 Loss Open Target: 0.112985
+Train 4200/10000 	 Loss Source: 0.8654 Loss Open: 0.5053 Loss Open Source Positive: 0.5568 Loss Open Source Negative: 0.4538 Loss Open Target: 0.120110
+Train 4300/10000 	 Loss Source: 0.8323 Loss Open: 0.5513 Loss Open Source Positive: 0.6364 Loss Open Source Negative: 0.4663 Loss Open Target: 0.113602
+Train 4400/10000 	 Loss Source: 0.8567 Loss Open: 0.5904 Loss Open Source Positive: 0.6448 Loss Open Source Negative: 0.5360 Loss Open Target: 0.112734
+Train 4500/10000 	 Loss Source: 0.5744 Loss Open: 0.4848 Loss Open Source Positive: 0.5173 Loss Open Source Negative: 0.4523 Loss Open Target: 0.115692
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4500', 'acc close all 30.436522048364154', 'roc 0.4629018066802318']
+acc all 30.436522048364154 h_score 0.4629018066802318 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4600/10000 	 Loss Source: 0.6415 Loss Open: 0.5386 Loss Open Source Positive: 0.5255 Loss Open Source Negative: 0.5516 Loss Open Target: 0.112629
+Train 4700/10000 	 Loss Source: 0.5774 Loss Open: 0.4887 Loss Open Source Positive: 0.4646 Loss Open Source Negative: 0.5127 Loss Open Target: 0.110449
+Train 4800/10000 	 Loss Source: 0.9352 Loss Open: 0.5578 Loss Open Source Positive: 0.5973 Loss Open Source Negative: 0.5183 Loss Open Target: 0.111304
+Train 4900/10000 	 Loss Source: 1.1240 Loss Open: 0.6695 Loss Open Source Positive: 0.8351 Loss Open Source Negative: 0.5039 Loss Open Target: 0.107321
+Train 5000/10000 	 Loss Source: 0.9930 Loss Open: 0.5849 Loss Open Source Positive: 0.6649 Loss Open Source Negative: 0.5050 Loss Open Target: 0.106572
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5000', 'acc close all 31.52115931721195', 'roc 0.46176406728697206']
+acc all 31.52115931721195 h_score 0.46176406728697206 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5100/10000 	 Loss Source: 0.6851 Loss Open: 0.5208 Loss Open Source Positive: 0.5733 Loss Open Source Negative: 0.4682 Loss Open Target: 0.110041
+Train 5200/10000 	 Loss Source: 1.3940 Loss Open: 0.7214 Loss Open Source Positive: 0.9106 Loss Open Source Negative: 0.5321 Loss Open Target: 0.107072
+Train 5300/10000 	 Loss Source: 0.7080 Loss Open: 0.4729 Loss Open Source Positive: 0.4999 Loss Open Source Negative: 0.4460 Loss Open Target: 0.107332
+Train 5400/10000 	 Loss Source: 0.8780 Loss Open: 0.5300 Loss Open Source Positive: 0.6106 Loss Open Source Negative: 0.4495 Loss Open Target: 0.104723
+Train 5500/10000 	 Loss Source: 0.7238 Loss Open: 0.5044 Loss Open Source Positive: 0.5502 Loss Open Source Negative: 0.4587 Loss Open Target: 0.104702
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5500', 'acc close all 32.2146159317212', 'roc 0.478145623830297']
+acc all 32.2146159317212 h_score 0.478145623830297 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5600/10000 	 Loss Source: 1.2964 Loss Open: 0.6242 Loss Open Source Positive: 0.8597 Loss Open Source Negative: 0.3887 Loss Open Target: 0.104185
+Train 5700/10000 	 Loss Source: 0.7604 Loss Open: 0.5946 Loss Open Source Positive: 0.6408 Loss Open Source Negative: 0.5484 Loss Open Target: 0.108368
+Train 5800/10000 	 Loss Source: 0.8752 Loss Open: 0.5337 Loss Open Source Positive: 0.4931 Loss Open Source Negative: 0.5744 Loss Open Target: 0.105221
+Train 5900/10000 	 Loss Source: 0.8998 Loss Open: 0.4802 Loss Open Source Positive: 0.5814 Loss Open Source Negative: 0.3791 Loss Open Target: 0.104596
+Train 6000/10000 	 Loss Source: 0.5691 Loss Open: 0.4686 Loss Open Source Positive: 0.4330 Loss Open Source Negative: 0.5042 Loss Open Target: 0.107369
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6000', 'acc close all 31.245554765291608', 'roc 0.4662806354101599']
+acc all 31.245554765291608 h_score 0.4662806354101599 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6100/10000 	 Loss Source: 0.7283 Loss Open: 0.4742 Loss Open Source Positive: 0.4804 Loss Open Source Negative: 0.4680 Loss Open Target: 0.102240
+Train 6200/10000 	 Loss Source: 0.7478 Loss Open: 0.4924 Loss Open Source Positive: 0.5512 Loss Open Source Negative: 0.4336 Loss Open Target: 0.101509
+Train 6300/10000 	 Loss Source: 0.4492 Loss Open: 0.4350 Loss Open Source Positive: 0.3754 Loss Open Source Negative: 0.4947 Loss Open Target: 0.101160
+Train 6400/10000 	 Loss Source: 0.8300 Loss Open: 0.5390 Loss Open Source Positive: 0.6428 Loss Open Source Negative: 0.4353 Loss Open Target: 0.096244
+Train 6500/10000 	 Loss Source: 1.3212 Loss Open: 0.6900 Loss Open Source Positive: 0.8574 Loss Open Source Negative: 0.5227 Loss Open Target: 0.101638
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6500', 'acc close all 31.627844950213372', 'roc 0.4525521906734268']
+acc all 31.627844950213372 h_score 0.4525521906734268 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6600/10000 	 Loss Source: 0.8405 Loss Open: 0.5027 Loss Open Source Positive: 0.5441 Loss Open Source Negative: 0.4614 Loss Open Target: 0.100230
+Train 6700/10000 	 Loss Source: 1.0448 Loss Open: 0.5941 Loss Open Source Positive: 0.7387 Loss Open Source Negative: 0.4495 Loss Open Target: 0.098763
+Train 6800/10000 	 Loss Source: 1.0076 Loss Open: 0.5590 Loss Open Source Positive: 0.6390 Loss Open Source Negative: 0.4789 Loss Open Target: 0.099853
+Train 6900/10000 	 Loss Source: 0.9023 Loss Open: 0.5908 Loss Open Source Positive: 0.6514 Loss Open Source Negative: 0.5301 Loss Open Target: 0.100478
+Train 7000/10000 	 Loss Source: 0.5328 Loss Open: 0.4434 Loss Open Source Positive: 0.4138 Loss Open Source Negative: 0.4729 Loss Open Target: 0.099723
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7000', 'acc close all 32.18349928876245', 'roc 0.4717758817868205']
+acc all 32.18349928876245 h_score 0.4717758817868205 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7100/10000 	 Loss Source: 0.8839 Loss Open: 0.5561 Loss Open Source Positive: 0.5910 Loss Open Source Negative: 0.5212 Loss Open Target: 0.095366
+Train 7200/10000 	 Loss Source: 0.7453 Loss Open: 0.4752 Loss Open Source Positive: 0.4400 Loss Open Source Negative: 0.5104 Loss Open Target: 0.098412
+Train 7300/10000 	 Loss Source: 0.5451 Loss Open: 0.4608 Loss Open Source Positive: 0.4242 Loss Open Source Negative: 0.4973 Loss Open Target: 0.099988
+Train 7400/10000 	 Loss Source: 0.9510 Loss Open: 0.6020 Loss Open Source Positive: 0.6172 Loss Open Source Negative: 0.5868 Loss Open Target: 0.101772
+Train 7500/10000 	 Loss Source: 0.9175 Loss Open: 0.5840 Loss Open Source Positive: 0.7136 Loss Open Source Negative: 0.4543 Loss Open Target: 0.098938
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7500', 'acc close all 31.627844950213372', 'roc 0.45506438785855857']
+acc all 31.627844950213372 h_score 0.45506438785855857 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7600/10000 	 Loss Source: 1.3601 Loss Open: 0.6195 Loss Open Source Positive: 0.7552 Loss Open Source Negative: 0.4837 Loss Open Target: 0.095567
+Train 7700/10000 	 Loss Source: 0.9092 Loss Open: 0.5624 Loss Open Source Positive: 0.6139 Loss Open Source Negative: 0.5108 Loss Open Target: 0.093204
+Train 7800/10000 	 Loss Source: 1.2613 Loss Open: 0.6775 Loss Open Source Positive: 0.8741 Loss Open Source Negative: 0.4809 Loss Open Target: 0.093356
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 131072.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 131072.0
+Train 7900/10000 	 Loss Source: 0.6785 Loss Open: 0.4771 Loss Open Source Positive: 0.5094 Loss Open Source Negative: 0.4448 Loss Open Target: 0.094757
+Train 8000/10000 	 Loss Source: 0.7980 Loss Open: 0.5688 Loss Open Source Positive: 0.5960 Loss Open Source Negative: 0.5416 Loss Open Target: 0.095599
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8000', 'acc close all 31.4900426742532', 'roc 0.4769114259471279']
+acc all 31.4900426742532 h_score 0.4769114259471279 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8100/10000 	 Loss Source: 0.7661 Loss Open: 0.4943 Loss Open Source Positive: 0.5320 Loss Open Source Negative: 0.4565 Loss Open Target: 0.093997
+Train 8200/10000 	 Loss Source: 1.2509 Loss Open: 0.6255 Loss Open Source Positive: 0.7435 Loss Open Source Negative: 0.5075 Loss Open Target: 0.093237
+Train 8300/10000 	 Loss Source: 0.7298 Loss Open: 0.5215 Loss Open Source Positive: 0.5523 Loss Open Source Negative: 0.4908 Loss Open Target: 0.091217
+Train 8400/10000 	 Loss Source: 0.8862 Loss Open: 0.5346 Loss Open Source Positive: 0.5786 Loss Open Source Negative: 0.4907 Loss Open Target: 0.091351
+Train 8500/10000 	 Loss Source: 0.6118 Loss Open: 0.4694 Loss Open Source Positive: 0.5837 Loss Open Source Negative: 0.3550 Loss Open Target: 0.093954
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8500', 'acc close all 31.441145092460882', 'roc 0.46839950160691485']
+acc all 31.441145092460882 h_score 0.46839950160691485 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8600/10000 	 Loss Source: 1.0190 Loss Open: 0.6048 Loss Open Source Positive: 0.7613 Loss Open Source Negative: 0.4482 Loss Open Target: 0.091953
+Train 8700/10000 	 Loss Source: 0.9863 Loss Open: 0.5347 Loss Open Source Positive: 0.6179 Loss Open Source Negative: 0.4515 Loss Open Target: 0.096031
+Train 8800/10000 	 Loss Source: 0.7396 Loss Open: 0.4995 Loss Open Source Positive: 0.5164 Loss Open Source Negative: 0.4826 Loss Open Target: 0.090616
+Train 8900/10000 	 Loss Source: 0.9743 Loss Open: 0.5379 Loss Open Source Positive: 0.6184 Loss Open Source Negative: 0.4575 Loss Open Target: 0.091954
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 9000/10000 	 Loss Source: 1.1376 Loss Open: 0.5966 Loss Open Source Positive: 0.8100 Loss Open Source Negative: 0.3833 Loss Open Target: 0.089717
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9000', 'acc close all 32.19238975817923', 'roc 0.46323673199241705']
+acc all 32.19238975817923 h_score 0.46323673199241705 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9100/10000 	 Loss Source: 0.8801 Loss Open: 0.5358 Loss Open Source Positive: 0.5653 Loss Open Source Negative: 0.5064 Loss Open Target: 0.096008
+Train 9200/10000 	 Loss Source: 0.6447 Loss Open: 0.4786 Loss Open Source Positive: 0.4918 Loss Open Source Negative: 0.4655 Loss Open Target: 0.090229
+Train 9300/10000 	 Loss Source: 0.7682 Loss Open: 0.5325 Loss Open Source Positive: 0.5663 Loss Open Source Negative: 0.4987 Loss Open Target: 0.092050
+Train 9400/10000 	 Loss Source: 0.6818 Loss Open: 0.4743 Loss Open Source Positive: 0.5554 Loss Open Source Negative: 0.3932 Loss Open Target: 0.090109
+Train 9500/10000 	 Loss Source: 0.8942 Loss Open: 0.5857 Loss Open Source Positive: 0.6467 Loss Open Source Negative: 0.5247 Loss Open Target: 0.091106
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9500', 'acc close all 32.143492176386914', 'roc 0.46867290284226176']
+acc all 32.143492176386914 h_score 0.46867290284226176 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9600/10000 	 Loss Source: 0.5163 Loss Open: 0.4304 Loss Open Source Positive: 0.4485 Loss Open Source Negative: 0.4124 Loss Open Target: 0.089377
+Train 9700/10000 	 Loss Source: 0.5576 Loss Open: 0.4715 Loss Open Source Positive: 0.4894 Loss Open Source Negative: 0.4535 Loss Open Target: 0.086661
+Train 9800/10000 	 Loss Source: 0.3662 Loss Open: 0.3985 Loss Open Source Positive: 0.3470 Loss Open Source Negative: 0.4501 Loss Open Target: 0.090630
+Train 9900/10000 	 Loss Source: 0.9569 Loss Open: 0.5326 Loss Open Source Positive: 0.6094 Loss Open Source Negative: 0.4558 Loss Open Target: 0.088823
+Train 10000/10000 	 Loss Source: 0.8219 Loss Open: 0.4799 Loss Open Source Positive: 0.5271 Loss Open Source Negative: 0.4327 Loss Open Target: 0.090113
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 10000', 'acc close all 31.525604551920342', 'roc 0.46791806823133275']
+acc all 31.525604551920342 h_score 0.46791806823133275 
+train_ovanet.py:54: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  conf = yaml.load(open(config_file))
+train_ovanet.py:55: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  save_config = yaml.load(open(config_file))
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/torchvision/transforms/transforms.py:280: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+use balanced loader
+record in record/ovanet/image_to_objectnet_imagenet_c_r_o/train_ovanet_/data1/jiaming/data/imagenet/train/2objectnet_c_r_o_resnet50_hp_0.05 
+selected network resnet50
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+train start!
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 0/10000 	 Loss Source: 6.9957 Loss Open: 1.7381 Loss Open Source Positive: 0.7105 Loss Open Source Negative: 2.7657 Loss Open Target: 0.624456
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 0', 'acc close all 0.06667852062588904', 'roc 0.5025419014650792']
+acc all 0.06667852062588904 h_score 0.5025419014650792 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 100/10000 	 Loss Source: 5.9508 Loss Open: 1.1090 Loss Open Source Positive: 0.8597 Loss Open Source Negative: 1.3583 Loss Open Target: 0.552902
+Train 200/10000 	 Loss Source: 4.4227 Loss Open: 0.9700 Loss Open Source Positive: 0.8920 Loss Open Source Negative: 1.0480 Loss Open Target: 0.435529
+Train 300/10000 	 Loss Source: 3.5666 Loss Open: 0.9174 Loss Open Source Positive: 0.9021 Loss Open Source Negative: 0.9327 Loss Open Target: 0.352343
+Train 400/10000 	 Loss Source: 2.5989 Loss Open: 0.7829 Loss Open Source Positive: 0.7667 Loss Open Source Negative: 0.7992 Loss Open Target: 0.302221
+Train 500/10000 	 Loss Source: 2.2772 Loss Open: 0.7911 Loss Open Source Positive: 0.7913 Loss Open Source Negative: 0.7910 Loss Open Target: 0.282040
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 500', 'acc close all 22.861842105263158', 'roc 0.5108768073705185']
+acc all 22.861842105263158 h_score 0.5108768073705185 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 600/10000 	 Loss Source: 2.4342 Loss Open: 0.8264 Loss Open Source Positive: 0.9073 Loss Open Source Negative: 0.7455 Loss Open Target: 0.262112
+Train 700/10000 	 Loss Source: 1.7785 Loss Open: 0.7276 Loss Open Source Positive: 0.6994 Loss Open Source Negative: 0.7558 Loss Open Target: 0.245167
+Train 800/10000 	 Loss Source: 1.7313 Loss Open: 0.6995 Loss Open Source Positive: 0.7189 Loss Open Source Negative: 0.6802 Loss Open Target: 0.230094
+Train 900/10000 	 Loss Source: 1.6990 Loss Open: 0.6949 Loss Open Source Positive: 0.7685 Loss Open Source Negative: 0.6214 Loss Open Target: 0.220706
+Train 1000/10000 	 Loss Source: 1.9720 Loss Open: 0.8290 Loss Open Source Positive: 0.9650 Loss Open Source Negative: 0.6930 Loss Open Target: 0.211567
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1000', 'acc close all 27.38709103840683', 'roc 0.4937292331168578']
+acc all 27.38709103840683 h_score 0.4937292331168578 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1100/10000 	 Loss Source: 1.5602 Loss Open: 0.6351 Loss Open Source Positive: 0.7176 Loss Open Source Negative: 0.5526 Loss Open Target: 0.201427
+Train 1200/10000 	 Loss Source: 1.2037 Loss Open: 0.6075 Loss Open Source Positive: 0.5899 Loss Open Source Negative: 0.6252 Loss Open Target: 0.196295
+Train 1300/10000 	 Loss Source: 1.3602 Loss Open: 0.6742 Loss Open Source Positive: 0.7684 Loss Open Source Negative: 0.5800 Loss Open Target: 0.185944
+Train 1400/10000 	 Loss Source: 0.9180 Loss Open: 0.5756 Loss Open Source Positive: 0.5335 Loss Open Source Negative: 0.6178 Loss Open Target: 0.185037
+Train 1500/10000 	 Loss Source: 1.0559 Loss Open: 0.5895 Loss Open Source Positive: 0.6141 Loss Open Source Negative: 0.5648 Loss Open Target: 0.179956
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1500', 'acc close all 29.605263157894736', 'roc 0.497278029819903']
+acc all 29.605263157894736 h_score 0.497278029819903 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1600/10000 	 Loss Source: 1.3771 Loss Open: 0.6798 Loss Open Source Positive: 0.7749 Loss Open Source Negative: 0.5847 Loss Open Target: 0.176204
+Train 1700/10000 	 Loss Source: 1.0518 Loss Open: 0.5601 Loss Open Source Positive: 0.5892 Loss Open Source Negative: 0.5310 Loss Open Target: 0.169823
+Train 1800/10000 	 Loss Source: 1.3997 Loss Open: 0.6801 Loss Open Source Positive: 0.7174 Loss Open Source Negative: 0.6427 Loss Open Target: 0.165962
+Train 1900/10000 	 Loss Source: 1.4460 Loss Open: 0.6674 Loss Open Source Positive: 0.7088 Loss Open Source Negative: 0.6259 Loss Open Target: 0.166330
+Train 2000/10000 	 Loss Source: 1.1663 Loss Open: 0.6391 Loss Open Source Positive: 0.6863 Loss Open Source Negative: 0.5918 Loss Open Target: 0.160936
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2000', 'acc close all 29.196301564722617', 'roc 0.49320853211371374']
+acc all 29.196301564722617 h_score 0.49320853211371374 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2100/10000 	 Loss Source: 1.1003 Loss Open: 0.6160 Loss Open Source Positive: 0.6971 Loss Open Source Negative: 0.5348 Loss Open Target: 0.161171
+Train 2200/10000 	 Loss Source: 1.0531 Loss Open: 0.6367 Loss Open Source Positive: 0.6676 Loss Open Source Negative: 0.6058 Loss Open Target: 0.155222
+Train 2300/10000 	 Loss Source: 0.7199 Loss Open: 0.5263 Loss Open Source Positive: 0.5128 Loss Open Source Negative: 0.5398 Loss Open Target: 0.158467
+Train 2400/10000 	 Loss Source: 1.0286 Loss Open: 0.5372 Loss Open Source Positive: 0.5322 Loss Open Source Negative: 0.5421 Loss Open Target: 0.155663
+Train 2500/10000 	 Loss Source: 0.9962 Loss Open: 0.6213 Loss Open Source Positive: 0.6478 Loss Open Source Negative: 0.5948 Loss Open Target: 0.154807
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2500', 'acc close all 30.112019914651494', 'roc 0.505775349902718']
+acc all 30.112019914651494 h_score 0.505775349902718 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2600/10000 	 Loss Source: 0.5262 Loss Open: 0.4742 Loss Open Source Positive: 0.4548 Loss Open Source Negative: 0.4936 Loss Open Target: 0.148118
+Train 2700/10000 	 Loss Source: 0.9283 Loss Open: 0.6018 Loss Open Source Positive: 0.5757 Loss Open Source Negative: 0.6278 Loss Open Target: 0.150072
+Train 2800/10000 	 Loss Source: 0.8976 Loss Open: 0.5694 Loss Open Source Positive: 0.6363 Loss Open Source Negative: 0.5024 Loss Open Target: 0.145894
+Train 2900/10000 	 Loss Source: 1.4958 Loss Open: 0.6662 Loss Open Source Positive: 0.7884 Loss Open Source Negative: 0.5440 Loss Open Target: 0.147578
+Train 3000/10000 	 Loss Source: 1.1112 Loss Open: 0.6718 Loss Open Source Positive: 0.7648 Loss Open Source Negative: 0.5788 Loss Open Target: 0.142762
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3000', 'acc close all 30.14313655761024', 'roc 0.4774643289783102']
+acc all 30.14313655761024 h_score 0.4774643289783102 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3100/10000 	 Loss Source: 1.1738 Loss Open: 0.5763 Loss Open Source Positive: 0.6663 Loss Open Source Negative: 0.4862 Loss Open Target: 0.145077
+Train 3200/10000 	 Loss Source: 0.9457 Loss Open: 0.5808 Loss Open Source Positive: 0.6405 Loss Open Source Negative: 0.5210 Loss Open Target: 0.140671
+Train 3300/10000 	 Loss Source: 0.8182 Loss Open: 0.5650 Loss Open Source Positive: 0.5938 Loss Open Source Negative: 0.5361 Loss Open Target: 0.137000
+Train 3400/10000 	 Loss Source: 0.7069 Loss Open: 0.5753 Loss Open Source Positive: 0.5358 Loss Open Source Negative: 0.6148 Loss Open Target: 0.139759
+Train 3500/10000 	 Loss Source: 0.7888 Loss Open: 0.5646 Loss Open Source Positive: 0.6172 Loss Open Source Negative: 0.5120 Loss Open Target: 0.136800
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3500', 'acc close all 30.29427453769559', 'roc 0.4845085803247932']
+acc all 30.29427453769559 h_score 0.4845085803247932 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3600/10000 	 Loss Source: 0.8069 Loss Open: 0.6093 Loss Open Source Positive: 0.6223 Loss Open Source Negative: 0.5962 Loss Open Target: 0.138360
+Train 3700/10000 	 Loss Source: 0.7106 Loss Open: 0.5046 Loss Open Source Positive: 0.5482 Loss Open Source Negative: 0.4610 Loss Open Target: 0.133327
+Train 3800/10000 	 Loss Source: 1.2263 Loss Open: 0.6694 Loss Open Source Positive: 0.7748 Loss Open Source Negative: 0.5639 Loss Open Target: 0.134187
+Train 3900/10000 	 Loss Source: 0.9205 Loss Open: 0.5431 Loss Open Source Positive: 0.5876 Loss Open Source Negative: 0.4986 Loss Open Target: 0.129842
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 4000/10000 	 Loss Source: 0.9351 Loss Open: 0.5931 Loss Open Source Positive: 0.6603 Loss Open Source Negative: 0.5259 Loss Open Target: 0.130115
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4000', 'acc close all 30.649893314367', 'roc 0.48035776956484566']
+acc all 30.649893314367 h_score 0.48035776956484566 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4100/10000 	 Loss Source: 0.9613 Loss Open: 0.5817 Loss Open Source Positive: 0.6089 Loss Open Source Negative: 0.5546 Loss Open Target: 0.126539
+Train 4200/10000 	 Loss Source: 0.7711 Loss Open: 0.5299 Loss Open Source Positive: 0.5836 Loss Open Source Negative: 0.4762 Loss Open Target: 0.128755
+Train 4300/10000 	 Loss Source: 0.8913 Loss Open: 0.5822 Loss Open Source Positive: 0.6346 Loss Open Source Negative: 0.5297 Loss Open Target: 0.125127
+Train 4400/10000 	 Loss Source: 0.9681 Loss Open: 0.5481 Loss Open Source Positive: 0.6526 Loss Open Source Negative: 0.4435 Loss Open Target: 0.129848
+Train 4500/10000 	 Loss Source: 0.9585 Loss Open: 0.5759 Loss Open Source Positive: 0.5937 Loss Open Source Negative: 0.5582 Loss Open Target: 0.129707
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4500', 'acc close all 31.294452347083926', 'roc 0.4691750486046641']
+acc all 31.294452347083926 h_score 0.4691750486046641 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4600/10000 	 Loss Source: 1.0446 Loss Open: 0.5851 Loss Open Source Positive: 0.6789 Loss Open Source Negative: 0.4913 Loss Open Target: 0.127130
+Train 4700/10000 	 Loss Source: 0.6069 Loss Open: 0.5093 Loss Open Source Positive: 0.5254 Loss Open Source Negative: 0.4932 Loss Open Target: 0.121335
+Train 4800/10000 	 Loss Source: 0.9383 Loss Open: 0.5719 Loss Open Source Positive: 0.6082 Loss Open Source Negative: 0.5356 Loss Open Target: 0.127951
+Train 4900/10000 	 Loss Source: 0.8610 Loss Open: 0.5183 Loss Open Source Positive: 0.5325 Loss Open Source Negative: 0.5041 Loss Open Target: 0.123230
+Train 5000/10000 	 Loss Source: 0.8414 Loss Open: 0.5582 Loss Open Source Positive: 0.5920 Loss Open Source Negative: 0.5245 Loss Open Target: 0.121657
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5000', 'acc close all 31.1299786628734', 'roc 0.4822915337057329']
+acc all 31.1299786628734 h_score 0.4822915337057329 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5100/10000 	 Loss Source: 0.7066 Loss Open: 0.4760 Loss Open Source Positive: 0.4816 Loss Open Source Negative: 0.4704 Loss Open Target: 0.124847
+Train 5200/10000 	 Loss Source: 0.9216 Loss Open: 0.5942 Loss Open Source Positive: 0.6384 Loss Open Source Negative: 0.5501 Loss Open Target: 0.121520
+Train 5300/10000 	 Loss Source: 1.0510 Loss Open: 0.5775 Loss Open Source Positive: 0.7303 Loss Open Source Negative: 0.4246 Loss Open Target: 0.123610
+Train 5400/10000 	 Loss Source: 0.5492 Loss Open: 0.4967 Loss Open Source Positive: 0.3985 Loss Open Source Negative: 0.5949 Loss Open Target: 0.124210
+Train 5500/10000 	 Loss Source: 0.8638 Loss Open: 0.5409 Loss Open Source Positive: 0.5618 Loss Open Source Negative: 0.5200 Loss Open Target: 0.115617
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5500', 'acc close all 31.50337837837838', 'roc 0.4710600725975781']
+acc all 31.50337837837838 h_score 0.4710600725975781 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5600/10000 	 Loss Source: 0.6534 Loss Open: 0.5223 Loss Open Source Positive: 0.5838 Loss Open Source Negative: 0.4607 Loss Open Target: 0.119984
+Train 5700/10000 	 Loss Source: 0.9294 Loss Open: 0.5291 Loss Open Source Positive: 0.6115 Loss Open Source Negative: 0.4467 Loss Open Target: 0.121713
+Train 5800/10000 	 Loss Source: 0.9048 Loss Open: 0.5679 Loss Open Source Positive: 0.6976 Loss Open Source Negative: 0.4381 Loss Open Target: 0.115908
+Train 5900/10000 	 Loss Source: 0.8093 Loss Open: 0.5186 Loss Open Source Positive: 0.5772 Loss Open Source Negative: 0.4600 Loss Open Target: 0.119979
+Train 6000/10000 	 Loss Source: 1.2594 Loss Open: 0.6254 Loss Open Source Positive: 0.7524 Loss Open Source Negative: 0.4984 Loss Open Target: 0.116713
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6000', 'acc close all 31.00551209103841', 'roc 0.4739258979298422']
+acc all 31.00551209103841 h_score 0.4739258979298422 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6100/10000 	 Loss Source: 0.8664 Loss Open: 0.5152 Loss Open Source Positive: 0.5993 Loss Open Source Negative: 0.4310 Loss Open Target: 0.116259
+Train 6200/10000 	 Loss Source: 1.2177 Loss Open: 0.6298 Loss Open Source Positive: 0.7705 Loss Open Source Negative: 0.4892 Loss Open Target: 0.117418
+Train 6300/10000 	 Loss Source: 0.3857 Loss Open: 0.4144 Loss Open Source Positive: 0.3947 Loss Open Source Negative: 0.4341 Loss Open Target: 0.115011
+Train 6400/10000 	 Loss Source: 0.7715 Loss Open: 0.5421 Loss Open Source Positive: 0.5197 Loss Open Source Negative: 0.5646 Loss Open Target: 0.114439
+Train 6500/10000 	 Loss Source: 0.8241 Loss Open: 0.5340 Loss Open Source Positive: 0.5175 Loss Open Source Negative: 0.5505 Loss Open Target: 0.111210
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6500', 'acc close all 31.6722972972973', 'roc 0.481421954061296']
+acc all 31.6722972972973 h_score 0.481421954061296 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6600/10000 	 Loss Source: 1.1593 Loss Open: 0.5688 Loss Open Source Positive: 0.6234 Loss Open Source Negative: 0.5142 Loss Open Target: 0.115181
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 6700/10000 	 Loss Source: 1.6273 Loss Open: 0.6498 Loss Open Source Positive: 0.7620 Loss Open Source Negative: 0.5375 Loss Open Target: 0.116265
+Train 6800/10000 	 Loss Source: 0.5908 Loss Open: 0.5105 Loss Open Source Positive: 0.5303 Loss Open Source Negative: 0.4907 Loss Open Target: 0.111184
+Train 6900/10000 	 Loss Source: 0.7539 Loss Open: 0.5344 Loss Open Source Positive: 0.6166 Loss Open Source Negative: 0.4523 Loss Open Target: 0.114209
+Train 7000/10000 	 Loss Source: 0.6584 Loss Open: 0.5131 Loss Open Source Positive: 0.5281 Loss Open Source Negative: 0.4981 Loss Open Target: 0.109578
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7000', 'acc close all 31.810099573257467', 'roc 0.47402935389887274']
+acc all 31.810099573257467 h_score 0.47402935389887274 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7100/10000 	 Loss Source: 0.7165 Loss Open: 0.4837 Loss Open Source Positive: 0.4907 Loss Open Source Negative: 0.4766 Loss Open Target: 0.114834
+Train 7200/10000 	 Loss Source: 0.6460 Loss Open: 0.4663 Loss Open Source Positive: 0.4827 Loss Open Source Negative: 0.4499 Loss Open Target: 0.108193
+Train 7300/10000 	 Loss Source: 0.7888 Loss Open: 0.5644 Loss Open Source Positive: 0.6419 Loss Open Source Negative: 0.4869 Loss Open Target: 0.111077
+Train 7400/10000 	 Loss Source: 1.0103 Loss Open: 0.5534 Loss Open Source Positive: 0.6252 Loss Open Source Negative: 0.4816 Loss Open Target: 0.110258
+Train 7500/10000 	 Loss Source: 0.9970 Loss Open: 0.5347 Loss Open Source Positive: 0.5563 Loss Open Source Negative: 0.5131 Loss Open Target: 0.107164
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7500', 'acc close all 31.721194879089616', 'roc 0.4759455921739891']
+acc all 31.721194879089616 h_score 0.4759455921739891 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7600/10000 	 Loss Source: 0.8337 Loss Open: 0.5707 Loss Open Source Positive: 0.6156 Loss Open Source Negative: 0.5257 Loss Open Target: 0.108490
+Train 7700/10000 	 Loss Source: 0.5799 Loss Open: 0.4881 Loss Open Source Positive: 0.4768 Loss Open Source Negative: 0.4995 Loss Open Target: 0.110881
+Train 7800/10000 	 Loss Source: 1.1323 Loss Open: 0.5872 Loss Open Source Positive: 0.7246 Loss Open Source Negative: 0.4499 Loss Open Target: 0.106472
+Train 7900/10000 	 Loss Source: 0.7322 Loss Open: 0.5254 Loss Open Source Positive: 0.5654 Loss Open Source Negative: 0.4853 Loss Open Target: 0.108110
+Train 8000/10000 	 Loss Source: 1.3690 Loss Open: 0.6569 Loss Open Source Positive: 0.8895 Loss Open Source Negative: 0.4243 Loss Open Target: 0.106251
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8000', 'acc close all 32.04125177809388', 'roc 0.4677257454128024']
+acc all 32.04125177809388 h_score 0.4677257454128024 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8100/10000 	 Loss Source: 0.7852 Loss Open: 0.5413 Loss Open Source Positive: 0.6540 Loss Open Source Negative: 0.4287 Loss Open Target: 0.108853
+Train 8200/10000 	 Loss Source: 0.8756 Loss Open: 0.5576 Loss Open Source Positive: 0.6269 Loss Open Source Negative: 0.4884 Loss Open Target: 0.106694
+Train 8300/10000 	 Loss Source: 1.0288 Loss Open: 0.6159 Loss Open Source Positive: 0.6991 Loss Open Source Negative: 0.5326 Loss Open Target: 0.108062
+Train 8400/10000 	 Loss Source: 0.6378 Loss Open: 0.4827 Loss Open Source Positive: 0.4121 Loss Open Source Negative: 0.5533 Loss Open Target: 0.106146
+Train 8500/10000 	 Loss Source: 0.8778 Loss Open: 0.5240 Loss Open Source Positive: 0.6165 Loss Open Source Negative: 0.4316 Loss Open Target: 0.102123
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8500', 'acc close all 32.69914651493599', 'roc 0.472497280633533']
+acc all 32.69914651493599 h_score 0.472497280633533 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8600/10000 	 Loss Source: 0.8583 Loss Open: 0.5332 Loss Open Source Positive: 0.6213 Loss Open Source Negative: 0.4450 Loss Open Target: 0.106355
+Train 8700/10000 	 Loss Source: 0.6587 Loss Open: 0.4921 Loss Open Source Positive: 0.4583 Loss Open Source Negative: 0.5258 Loss Open Target: 0.107190
+Train 8800/10000 	 Loss Source: 0.7740 Loss Open: 0.5010 Loss Open Source Positive: 0.5162 Loss Open Source Negative: 0.4859 Loss Open Target: 0.103049
+Train 8900/10000 	 Loss Source: 0.9800 Loss Open: 0.5697 Loss Open Source Positive: 0.7086 Loss Open Source Negative: 0.4308 Loss Open Target: 0.103174
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 9000/10000 	 Loss Source: 0.5281 Loss Open: 0.4522 Loss Open Source Positive: 0.4270 Loss Open Source Negative: 0.4774 Loss Open Target: 0.101532
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9000', 'acc close all 32.47688477951636', 'roc 0.4744528168119458']
+acc all 32.47688477951636 h_score 0.4744528168119458 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9100/10000 	 Loss Source: 0.8762 Loss Open: 0.5760 Loss Open Source Positive: 0.5970 Loss Open Source Negative: 0.5551 Loss Open Target: 0.103094
+Train 9200/10000 	 Loss Source: 1.0667 Loss Open: 0.5637 Loss Open Source Positive: 0.6024 Loss Open Source Negative: 0.5250 Loss Open Target: 0.102866
+Train 9300/10000 	 Loss Source: 0.4179 Loss Open: 0.4076 Loss Open Source Positive: 0.4023 Loss Open Source Negative: 0.4130 Loss Open Target: 0.103464
+Train 9400/10000 	 Loss Source: 0.8167 Loss Open: 0.5274 Loss Open Source Positive: 0.5402 Loss Open Source Negative: 0.5147 Loss Open Target: 0.100838
+Train 9500/10000 	 Loss Source: 0.8419 Loss Open: 0.5101 Loss Open Source Positive: 0.4757 Loss Open Source Negative: 0.5445 Loss Open Target: 0.103349
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9500', 'acc close all 31.89900426742532', 'roc 0.4686977402978987']
+acc all 31.89900426742532 h_score 0.4686977402978987 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9600/10000 	 Loss Source: 1.0056 Loss Open: 0.6254 Loss Open Source Positive: 0.7218 Loss Open Source Negative: 0.5290 Loss Open Target: 0.103063
+Train 9700/10000 	 Loss Source: 0.8223 Loss Open: 0.4860 Loss Open Source Positive: 0.5247 Loss Open Source Negative: 0.4473 Loss Open Target: 0.099273
+Train 9800/10000 	 Loss Source: 0.7496 Loss Open: 0.4934 Loss Open Source Positive: 0.5410 Loss Open Source Negative: 0.4457 Loss Open Target: 0.103549
+Train 9900/10000 	 Loss Source: 0.5918 Loss Open: 0.4567 Loss Open Source Positive: 0.4420 Loss Open Source Negative: 0.4713 Loss Open Target: 0.100178
+Train 10000/10000 	 Loss Source: 0.7298 Loss Open: 0.5529 Loss Open Source Positive: 0.5710 Loss Open Source Negative: 0.5348 Loss Open Target: 0.102130
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 10000', 'acc close all 31.756756756756758', 'roc 0.4750295430616615']
+acc all 31.756756756756758 h_score 0.4750295430616615 
+train_ovanet.py:54: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  conf = yaml.load(open(config_file))
+train_ovanet.py:55: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  save_config = yaml.load(open(config_file))
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/torchvision/transforms/transforms.py:280: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+use balanced loader
+record in record/ovanet/image_to_objectnet_imagenet_c_r_o/train_ovanet_/data1/jiaming/data/imagenet/train/2objectnet_c_r_o_resnet50_hp_0.01 
+selected network resnet50
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+train start!
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 0/10000 	 Loss Source: 7.0335 Loss Open: 1.8480 Loss Open Source Positive: 0.8034 Loss Open Source Negative: 2.8927 Loss Open Target: 0.625068
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 0', 'acc close all 0.062233285917496446', 'roc 0.5167205955709265']
+acc all 0.062233285917496446 h_score 0.5167205955709265 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 100/10000 	 Loss Source: 5.9262 Loss Open: 1.0941 Loss Open Source Positive: 0.8894 Loss Open Source Negative: 1.2988 Loss Open Target: 0.550801
+Train 200/10000 	 Loss Source: 4.5885 Loss Open: 0.9705 Loss Open Source Positive: 0.8945 Loss Open Source Negative: 1.0465 Loss Open Target: 0.442877
+Train 300/10000 	 Loss Source: 4.0029 Loss Open: 0.9585 Loss Open Source Positive: 1.0211 Loss Open Source Negative: 0.8958 Loss Open Target: 0.363029
+Train 400/10000 	 Loss Source: 2.1352 Loss Open: 0.8246 Loss Open Source Positive: 0.7931 Loss Open Source Negative: 0.8561 Loss Open Target: 0.317210
+Train 500/10000 	 Loss Source: 1.9366 Loss Open: 0.7281 Loss Open Source Positive: 0.7329 Loss Open Source Negative: 0.7232 Loss Open Target: 0.282584
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 500', 'acc close all 23.710881934566146', 'roc 0.5145177974693846']
+acc all 23.710881934566146 h_score 0.5145177974693846 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 600/10000 	 Loss Source: 2.0697 Loss Open: 0.7660 Loss Open Source Positive: 0.7360 Loss Open Source Negative: 0.7961 Loss Open Target: 0.263834
+Train 700/10000 	 Loss Source: 1.9275 Loss Open: 0.7953 Loss Open Source Positive: 0.7177 Loss Open Source Negative: 0.8728 Loss Open Target: 0.248589
+Train 800/10000 	 Loss Source: 1.6568 Loss Open: 0.7066 Loss Open Source Positive: 0.7526 Loss Open Source Negative: 0.6605 Loss Open Target: 0.238487
+Train 900/10000 	 Loss Source: 1.8316 Loss Open: 0.7046 Loss Open Source Positive: 0.7035 Loss Open Source Negative: 0.7056 Loss Open Target: 0.230874
+Train 1000/10000 	 Loss Source: 1.2835 Loss Open: 0.6820 Loss Open Source Positive: 0.6612 Loss Open Source Negative: 0.7028 Loss Open Target: 0.221456
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1000', 'acc close all 26.61806543385491', 'roc 0.4887791997348331']
+acc all 26.61806543385491 h_score 0.4887791997348331 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1100/10000 	 Loss Source: 1.4729 Loss Open: 0.6712 Loss Open Source Positive: 0.7026 Loss Open Source Negative: 0.6397 Loss Open Target: 0.211509
+Train 1200/10000 	 Loss Source: 1.3096 Loss Open: 0.6684 Loss Open Source Positive: 0.6900 Loss Open Source Negative: 0.6469 Loss Open Target: 0.206325
+Train 1300/10000 	 Loss Source: 1.2773 Loss Open: 0.6518 Loss Open Source Positive: 0.6752 Loss Open Source Negative: 0.6283 Loss Open Target: 0.204207
+Train 1400/10000 	 Loss Source: 0.9938 Loss Open: 0.5732 Loss Open Source Positive: 0.6151 Loss Open Source Negative: 0.5313 Loss Open Target: 0.195487
+Train 1500/10000 	 Loss Source: 1.5569 Loss Open: 0.7217 Loss Open Source Positive: 0.8123 Loss Open Source Negative: 0.6312 Loss Open Target: 0.192838
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1500', 'acc close all 29.703058321479375', 'roc 0.49515508396793295']
+acc all 29.703058321479375 h_score 0.49515508396793295 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1600/10000 	 Loss Source: 1.4156 Loss Open: 0.7406 Loss Open Source Positive: 0.8827 Loss Open Source Negative: 0.5984 Loss Open Target: 0.188861
+Train 1700/10000 	 Loss Source: 1.1521 Loss Open: 0.6670 Loss Open Source Positive: 0.7395 Loss Open Source Negative: 0.5945 Loss Open Target: 0.189987
+Train 1800/10000 	 Loss Source: 0.9308 Loss Open: 0.5599 Loss Open Source Positive: 0.5823 Loss Open Source Negative: 0.5375 Loss Open Target: 0.182096
+Train 1900/10000 	 Loss Source: 0.9955 Loss Open: 0.6508 Loss Open Source Positive: 0.6787 Loss Open Source Negative: 0.6229 Loss Open Target: 0.184354
+Train 2000/10000 	 Loss Source: 1.2470 Loss Open: 0.6907 Loss Open Source Positive: 0.7631 Loss Open Source Negative: 0.6183 Loss Open Target: 0.174364
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2000', 'acc close all 29.254089615931722', 'roc 0.4935208036076081']
+acc all 29.254089615931722 h_score 0.4935208036076081 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2100/10000 	 Loss Source: 0.9119 Loss Open: 0.6037 Loss Open Source Positive: 0.6667 Loss Open Source Negative: 0.5406 Loss Open Target: 0.169361
+Train 2200/10000 	 Loss Source: 1.1860 Loss Open: 0.6110 Loss Open Source Positive: 0.6546 Loss Open Source Negative: 0.5674 Loss Open Target: 0.166902
+Train 2300/10000 	 Loss Source: 1.1136 Loss Open: 0.5824 Loss Open Source Positive: 0.5970 Loss Open Source Negative: 0.5679 Loss Open Target: 0.168203
+Train 2400/10000 	 Loss Source: 1.0550 Loss Open: 0.5685 Loss Open Source Positive: 0.6003 Loss Open Source Negative: 0.5366 Loss Open Target: 0.163324
+Train 2500/10000 	 Loss Source: 1.1222 Loss Open: 0.6031 Loss Open Source Positive: 0.6597 Loss Open Source Negative: 0.5466 Loss Open Target: 0.163399
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2500', 'acc close all 30.4098506401138', 'roc 0.477715447273113']
+acc all 30.4098506401138 h_score 0.477715447273113 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2600/10000 	 Loss Source: 1.0692 Loss Open: 0.5298 Loss Open Source Positive: 0.5886 Loss Open Source Negative: 0.4709 Loss Open Target: 0.158226
+Train 2700/10000 	 Loss Source: 1.0198 Loss Open: 0.6353 Loss Open Source Positive: 0.7225 Loss Open Source Negative: 0.5482 Loss Open Target: 0.157520
+Train 2800/10000 	 Loss Source: 0.7782 Loss Open: 0.5498 Loss Open Source Positive: 0.5746 Loss Open Source Negative: 0.5250 Loss Open Target: 0.157910
+Train 2900/10000 	 Loss Source: 0.6964 Loss Open: 0.5458 Loss Open Source Positive: 0.5643 Loss Open Source Negative: 0.5272 Loss Open Target: 0.156878
+Train 3000/10000 	 Loss Source: 0.9516 Loss Open: 0.5652 Loss Open Source Positive: 0.6087 Loss Open Source Negative: 0.5216 Loss Open Target: 0.155232
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3000', 'acc close all 30.983285917496445', 'roc 0.46938794000027606']
+acc all 30.983285917496445 h_score 0.46938794000027606 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3100/10000 	 Loss Source: 0.9059 Loss Open: 0.5878 Loss Open Source Positive: 0.6044 Loss Open Source Negative: 0.5713 Loss Open Target: 0.153877
+Train 3200/10000 	 Loss Source: 1.3329 Loss Open: 0.6362 Loss Open Source Positive: 0.7417 Loss Open Source Negative: 0.5307 Loss Open Target: 0.153775
+Train 3300/10000 	 Loss Source: 1.1300 Loss Open: 0.6339 Loss Open Source Positive: 0.6434 Loss Open Source Negative: 0.6244 Loss Open Target: 0.150167
+Train 3400/10000 	 Loss Source: 1.0646 Loss Open: 0.6241 Loss Open Source Positive: 0.7035 Loss Open Source Negative: 0.5447 Loss Open Target: 0.152357
+Train 3500/10000 	 Loss Source: 0.9850 Loss Open: 0.6222 Loss Open Source Positive: 0.7021 Loss Open Source Negative: 0.5424 Loss Open Target: 0.147528
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3500', 'acc close all 30.84103840682788', 'roc 0.4661230691347607']
+acc all 30.84103840682788 h_score 0.4661230691347607 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3600/10000 	 Loss Source: 0.8246 Loss Open: 0.5150 Loss Open Source Positive: 0.5460 Loss Open Source Negative: 0.4840 Loss Open Target: 0.152666
+Train 3700/10000 	 Loss Source: 0.8850 Loss Open: 0.5925 Loss Open Source Positive: 0.6914 Loss Open Source Negative: 0.4935 Loss Open Target: 0.150049
+Train 3800/10000 	 Loss Source: 1.2625 Loss Open: 0.6629 Loss Open Source Positive: 0.7411 Loss Open Source Negative: 0.5846 Loss Open Target: 0.146739
+Train 3900/10000 	 Loss Source: 0.6488 Loss Open: 0.4885 Loss Open Source Positive: 0.5161 Loss Open Source Negative: 0.4609 Loss Open Target: 0.146670
+Train 4000/10000 	 Loss Source: 0.5769 Loss Open: 0.4676 Loss Open Source Positive: 0.4333 Loss Open Source Negative: 0.5019 Loss Open Target: 0.142666
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4000', 'acc close all 30.405405405405407', 'roc 0.4736004186468006']
+acc all 30.405405405405407 h_score 0.4736004186468006 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 131072.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 131072.0
+Train 4100/10000 	 Loss Source: 0.9218 Loss Open: 0.5672 Loss Open Source Positive: 0.5888 Loss Open Source Negative: 0.5457 Loss Open Target: 0.138176
+Train 4200/10000 	 Loss Source: 0.9158 Loss Open: 0.5669 Loss Open Source Positive: 0.5964 Loss Open Source Negative: 0.5373 Loss Open Target: 0.140230
+Train 4300/10000 	 Loss Source: 0.6729 Loss Open: 0.5029 Loss Open Source Positive: 0.4841 Loss Open Source Negative: 0.5218 Loss Open Target: 0.136357
+Train 4400/10000 	 Loss Source: 1.0970 Loss Open: 0.5896 Loss Open Source Positive: 0.7287 Loss Open Source Negative: 0.4506 Loss Open Target: 0.139857
+Train 4500/10000 	 Loss Source: 0.8553 Loss Open: 0.5552 Loss Open Source Positive: 0.6197 Loss Open Source Negative: 0.4908 Loss Open Target: 0.140448
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4500', 'acc close all 31.485597439544808', 'roc 0.4816800963264877']
+acc all 31.485597439544808 h_score 0.4816800963264877 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4600/10000 	 Loss Source: 0.8618 Loss Open: 0.5668 Loss Open Source Positive: 0.6413 Loss Open Source Negative: 0.4922 Loss Open Target: 0.141331
+Train 4700/10000 	 Loss Source: 1.3018 Loss Open: 0.6201 Loss Open Source Positive: 0.7721 Loss Open Source Negative: 0.4680 Loss Open Target: 0.135534
+Train 4800/10000 	 Loss Source: 0.5726 Loss Open: 0.4893 Loss Open Source Positive: 0.4530 Loss Open Source Negative: 0.5255 Loss Open Target: 0.139501
+Train 4900/10000 	 Loss Source: 0.8657 Loss Open: 0.5699 Loss Open Source Positive: 0.6255 Loss Open Source Negative: 0.5142 Loss Open Target: 0.135183
+Train 5000/10000 	 Loss Source: 0.4830 Loss Open: 0.4922 Loss Open Source Positive: 0.4298 Loss Open Source Negative: 0.5546 Loss Open Target: 0.133711
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5000', 'acc close all 31.716749644381224', 'roc 0.4706996021344635']
+acc all 31.716749644381224 h_score 0.4706996021344635 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5100/10000 	 Loss Source: 1.0771 Loss Open: 0.5791 Loss Open Source Positive: 0.6237 Loss Open Source Negative: 0.5344 Loss Open Target: 0.136949
+Train 5200/10000 	 Loss Source: 0.7952 Loss Open: 0.5533 Loss Open Source Positive: 0.5744 Loss Open Source Negative: 0.5322 Loss Open Target: 0.135507
+Train 5300/10000 	 Loss Source: 0.7666 Loss Open: 0.5300 Loss Open Source Positive: 0.5474 Loss Open Source Negative: 0.5126 Loss Open Target: 0.132247
+Train 5400/10000 	 Loss Source: 1.0375 Loss Open: 0.6299 Loss Open Source Positive: 0.6994 Loss Open Source Negative: 0.5604 Loss Open Target: 0.136920
+Train 5500/10000 	 Loss Source: 0.6956 Loss Open: 0.5090 Loss Open Source Positive: 0.4633 Loss Open Source Negative: 0.5548 Loss Open Target: 0.130297
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5500', 'acc close all 31.325568990042676', 'roc 0.4850762238541785']
+acc all 31.325568990042676 h_score 0.4850762238541785 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5600/10000 	 Loss Source: 0.9324 Loss Open: 0.5253 Loss Open Source Positive: 0.5507 Loss Open Source Negative: 0.4999 Loss Open Target: 0.132686
+Train 5700/10000 	 Loss Source: 1.1351 Loss Open: 0.5970 Loss Open Source Positive: 0.6213 Loss Open Source Negative: 0.5727 Loss Open Target: 0.128082
+Train 5800/10000 	 Loss Source: 0.6847 Loss Open: 0.5213 Loss Open Source Positive: 0.4801 Loss Open Source Negative: 0.5625 Loss Open Target: 0.129750
+Train 5900/10000 	 Loss Source: 0.7981 Loss Open: 0.5221 Loss Open Source Positive: 0.5255 Loss Open Source Negative: 0.5188 Loss Open Target: 0.129198
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 6000/10000 	 Loss Source: 0.5807 Loss Open: 0.4797 Loss Open Source Positive: 0.4499 Loss Open Source Negative: 0.5094 Loss Open Target: 0.127266
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6000', 'acc close all 31.76564722617354', 'roc 0.48731858098722625']
+acc all 31.76564722617354 h_score 0.48731858098722625 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6100/10000 	 Loss Source: 0.6479 Loss Open: 0.4828 Loss Open Source Positive: 0.5019 Loss Open Source Negative: 0.4638 Loss Open Target: 0.125487
+Train 6200/10000 	 Loss Source: 0.7269 Loss Open: 0.5020 Loss Open Source Positive: 0.5014 Loss Open Source Negative: 0.5026 Loss Open Target: 0.129463
+Train 6300/10000 	 Loss Source: 0.6544 Loss Open: 0.5231 Loss Open Source Positive: 0.5661 Loss Open Source Negative: 0.4802 Loss Open Target: 0.124997
+Train 6400/10000 	 Loss Source: 1.1216 Loss Open: 0.6407 Loss Open Source Positive: 0.6704 Loss Open Source Negative: 0.6110 Loss Open Target: 0.126330
+Train 6500/10000 	 Loss Source: 0.9439 Loss Open: 0.5263 Loss Open Source Positive: 0.5246 Loss Open Source Negative: 0.5280 Loss Open Target: 0.132026
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6500', 'acc close all 32.2101706970128', 'roc 0.4684728597114504']
+acc all 32.2101706970128 h_score 0.4684728597114504 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6600/10000 	 Loss Source: 0.8101 Loss Open: 0.5579 Loss Open Source Positive: 0.5980 Loss Open Source Negative: 0.5178 Loss Open Target: 0.126193
+Train 6700/10000 	 Loss Source: 0.9956 Loss Open: 0.5209 Loss Open Source Positive: 0.5777 Loss Open Source Negative: 0.4641 Loss Open Target: 0.130919
+Train 6800/10000 	 Loss Source: 0.4214 Loss Open: 0.4384 Loss Open Source Positive: 0.3985 Loss Open Source Negative: 0.4782 Loss Open Target: 0.127459
+Train 6900/10000 	 Loss Source: 0.2977 Loss Open: 0.4200 Loss Open Source Positive: 0.3378 Loss Open Source Negative: 0.5023 Loss Open Target: 0.126599
+Train 7000/10000 	 Loss Source: 0.8398 Loss Open: 0.5180 Loss Open Source Positive: 0.5698 Loss Open Source Negative: 0.4661 Loss Open Target: 0.123449
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7000', 'acc close all 31.738975817923187', 'roc 0.478712673198394']
+acc all 31.738975817923187 h_score 0.478712673198394 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7100/10000 	 Loss Source: 1.0804 Loss Open: 0.5922 Loss Open Source Positive: 0.6799 Loss Open Source Negative: 0.5046 Loss Open Target: 0.126952
+Train 7200/10000 	 Loss Source: 0.6970 Loss Open: 0.4646 Loss Open Source Positive: 0.4918 Loss Open Source Negative: 0.4374 Loss Open Target: 0.127373
+Train 7300/10000 	 Loss Source: 0.7876 Loss Open: 0.4833 Loss Open Source Positive: 0.5180 Loss Open Source Negative: 0.4486 Loss Open Target: 0.125732
+Train 7400/10000 	 Loss Source: 0.7923 Loss Open: 0.5229 Loss Open Source Positive: 0.6416 Loss Open Source Negative: 0.4042 Loss Open Target: 0.123289
+Train 7500/10000 	 Loss Source: 0.8855 Loss Open: 0.5283 Loss Open Source Positive: 0.6211 Loss Open Source Negative: 0.4356 Loss Open Target: 0.121676
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7500', 'acc close all 31.485597439544808', 'roc 0.47228348096588796']
+acc all 31.485597439544808 h_score 0.47228348096588796 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7600/10000 	 Loss Source: 0.8563 Loss Open: 0.6207 Loss Open Source Positive: 0.6871 Loss Open Source Negative: 0.5542 Loss Open Target: 0.121023
+Train 7700/10000 	 Loss Source: 0.7291 Loss Open: 0.5138 Loss Open Source Positive: 0.5832 Loss Open Source Negative: 0.4443 Loss Open Target: 0.120381
+Train 7800/10000 	 Loss Source: 0.5546 Loss Open: 0.4699 Loss Open Source Positive: 0.4322 Loss Open Source Negative: 0.5077 Loss Open Target: 0.121153
+Train 7900/10000 	 Loss Source: 1.3143 Loss Open: 0.5714 Loss Open Source Positive: 0.6750 Loss Open Source Negative: 0.4678 Loss Open Target: 0.122732
+Train 8000/10000 	 Loss Source: 0.6398 Loss Open: 0.4936 Loss Open Source Positive: 0.5240 Loss Open Source Negative: 0.4632 Loss Open Target: 0.121530
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8000', 'acc close all 31.547830725462305', 'roc 0.46453851288377823']
+acc all 31.547830725462305 h_score 0.46453851288377823 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8100/10000 	 Loss Source: 0.7928 Loss Open: 0.5508 Loss Open Source Positive: 0.6578 Loss Open Source Negative: 0.4439 Loss Open Target: 0.115949
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 8200/10000 	 Loss Source: 0.8814 Loss Open: 0.5205 Loss Open Source Positive: 0.5718 Loss Open Source Negative: 0.4692 Loss Open Target: 0.117954
+Train 8300/10000 	 Loss Source: 0.5815 Loss Open: 0.4747 Loss Open Source Positive: 0.5110 Loss Open Source Negative: 0.4385 Loss Open Target: 0.121826
+Train 8400/10000 	 Loss Source: 0.4833 Loss Open: 0.4466 Loss Open Source Positive: 0.4307 Loss Open Source Negative: 0.4625 Loss Open Target: 0.116947
+Train 8500/10000 	 Loss Source: 0.8278 Loss Open: 0.5128 Loss Open Source Positive: 0.5958 Loss Open Source Negative: 0.4299 Loss Open Target: 0.119461
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8500', 'acc close all 32.12571123755334', 'roc 0.4736288513459017']
+acc all 32.12571123755334 h_score 0.4736288513459017 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8600/10000 	 Loss Source: 0.9976 Loss Open: 0.5702 Loss Open Source Positive: 0.6769 Loss Open Source Negative: 0.4634 Loss Open Target: 0.118133
+Train 8700/10000 	 Loss Source: 0.9846 Loss Open: 0.5180 Loss Open Source Positive: 0.6392 Loss Open Source Negative: 0.3969 Loss Open Target: 0.115972
+Train 8800/10000 	 Loss Source: 0.8805 Loss Open: 0.5839 Loss Open Source Positive: 0.6466 Loss Open Source Negative: 0.5213 Loss Open Target: 0.121715
+Train 8900/10000 	 Loss Source: 0.5843 Loss Open: 0.4599 Loss Open Source Positive: 0.4935 Loss Open Source Negative: 0.4263 Loss Open Target: 0.120210
+Train 9000/10000 	 Loss Source: 0.6498 Loss Open: 0.4337 Loss Open Source Positive: 0.5186 Loss Open Source Negative: 0.3487 Loss Open Target: 0.113250
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9000', 'acc close all 32.38353485064011', 'roc 0.4652983732666234']
+acc all 32.38353485064011 h_score 0.4652983732666234 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9100/10000 	 Loss Source: 1.0299 Loss Open: 0.5765 Loss Open Source Positive: 0.6252 Loss Open Source Negative: 0.5279 Loss Open Target: 0.116437
+Train 9200/10000 	 Loss Source: 1.0710 Loss Open: 0.5608 Loss Open Source Positive: 0.6605 Loss Open Source Negative: 0.4612 Loss Open Target: 0.115298
+Train 9300/10000 	 Loss Source: 0.6982 Loss Open: 0.5423 Loss Open Source Positive: 0.5155 Loss Open Source Negative: 0.5690 Loss Open Target: 0.112671
+Train 9400/10000 	 Loss Source: 0.4856 Loss Open: 0.4226 Loss Open Source Positive: 0.3978 Loss Open Source Negative: 0.4475 Loss Open Target: 0.112926
+Train 9500/10000 	 Loss Source: 0.6025 Loss Open: 0.4586 Loss Open Source Positive: 0.4635 Loss Open Source Negative: 0.4536 Loss Open Target: 0.114354
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9500', 'acc close all 32.52578236130868', 'roc 0.47257185733637963']
+acc all 32.52578236130868 h_score 0.47257185733637963 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9600/10000 	 Loss Source: 0.9427 Loss Open: 0.5078 Loss Open Source Positive: 0.5691 Loss Open Source Negative: 0.4466 Loss Open Target: 0.114616
+Train 9700/10000 	 Loss Source: 0.8741 Loss Open: 0.5239 Loss Open Source Positive: 0.6101 Loss Open Source Negative: 0.4378 Loss Open Target: 0.114362
+Train 9800/10000 	 Loss Source: 1.0445 Loss Open: 0.5911 Loss Open Source Positive: 0.6470 Loss Open Source Negative: 0.5353 Loss Open Target: 0.112832
+Train 9900/10000 	 Loss Source: 0.7773 Loss Open: 0.4813 Loss Open Source Positive: 0.4640 Loss Open Source Negative: 0.4986 Loss Open Target: 0.113684
+Train 10000/10000 	 Loss Source: 0.8447 Loss Open: 0.5406 Loss Open Source Positive: 0.5896 Loss Open Source Negative: 0.4915 Loss Open Target: 0.117884
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 10000', 'acc close all 32.454658605974394', 'roc 0.4628471059970417']
+acc all 32.454658605974394 h_score 0.4628471059970417 
+train_ovanet.py:54: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  conf = yaml.load(open(config_file))
+train_ovanet.py:55: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  save_config = yaml.load(open(config_file))
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/torchvision/transforms/transforms.py:280: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+use balanced loader
+record in record/ovanet/image_to_objectnet_imagenet_c_r_o/train_ovanet_/data1/jiaming/data/imagenet/train/2objectnet_c_r_o_resnet50_hp_0.02 
+selected network resnet50
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+train start!
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 0/10000 	 Loss Source: 7.0110 Loss Open: 1.8345 Loss Open Source Positive: 0.5998 Loss Open Source Negative: 3.0692 Loss Open Target: 0.620732
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 0', 'acc close all 0.05778805120910384', 'roc 0.5172489336280818']
+acc all 0.05778805120910384 h_score 0.5172489336280818 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 100/10000 	 Loss Source: 6.1441 Loss Open: 1.1573 Loss Open Source Positive: 0.9373 Loss Open Source Negative: 1.3774 Loss Open Target: 0.553365
+Train 200/10000 	 Loss Source: 3.9973 Loss Open: 0.9524 Loss Open Source Positive: 0.8360 Loss Open Source Negative: 1.0688 Loss Open Target: 0.446442
+Train 300/10000 	 Loss Source: 2.8059 Loss Open: 0.8308 Loss Open Source Positive: 0.7304 Loss Open Source Negative: 0.9312 Loss Open Target: 0.359331
+Train 400/10000 	 Loss Source: 2.8856 Loss Open: 0.8688 Loss Open Source Positive: 0.9243 Loss Open Source Negative: 0.8133 Loss Open Target: 0.314725
+Train 500/10000 	 Loss Source: 1.8396 Loss Open: 0.7348 Loss Open Source Positive: 0.6860 Loss Open Source Negative: 0.7837 Loss Open Target: 0.279170
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 500', 'acc close all 21.866109530583216', 'roc 0.515792087993879']
+acc all 21.866109530583216 h_score 0.515792087993879 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 600/10000 	 Loss Source: 1.9178 Loss Open: 0.8186 Loss Open Source Positive: 0.8625 Loss Open Source Negative: 0.7746 Loss Open Target: 0.264240
+Train 700/10000 	 Loss Source: 1.6488 Loss Open: 0.6973 Loss Open Source Positive: 0.6572 Loss Open Source Negative: 0.7375 Loss Open Target: 0.246981
+Train 800/10000 	 Loss Source: 1.5763 Loss Open: 0.7249 Loss Open Source Positive: 0.7421 Loss Open Source Negative: 0.7076 Loss Open Target: 0.232298
+Train 900/10000 	 Loss Source: 1.8675 Loss Open: 0.7807 Loss Open Source Positive: 0.8770 Loss Open Source Negative: 0.6844 Loss Open Target: 0.219996
+Train 1000/10000 	 Loss Source: 1.7473 Loss Open: 0.7537 Loss Open Source Positive: 0.8522 Loss Open Source Negative: 0.6553 Loss Open Target: 0.218121
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1000', 'acc close all 28.116109530583216', 'roc 0.5200854028513444']
+acc all 28.116109530583216 h_score 0.5200854028513444 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1100/10000 	 Loss Source: 1.3314 Loss Open: 0.6953 Loss Open Source Positive: 0.7615 Loss Open Source Negative: 0.6291 Loss Open Target: 0.210903
+Train 1200/10000 	 Loss Source: 1.6033 Loss Open: 0.7577 Loss Open Source Positive: 0.8897 Loss Open Source Negative: 0.6257 Loss Open Target: 0.201287
+Train 1300/10000 	 Loss Source: 1.3762 Loss Open: 0.7102 Loss Open Source Positive: 0.7444 Loss Open Source Negative: 0.6760 Loss Open Target: 0.197474
+Train 1400/10000 	 Loss Source: 1.0619 Loss Open: 0.6360 Loss Open Source Positive: 0.5963 Loss Open Source Negative: 0.6756 Loss Open Target: 0.191017
+Train 1500/10000 	 Loss Source: 1.7133 Loss Open: 0.7391 Loss Open Source Positive: 0.8721 Loss Open Source Negative: 0.6061 Loss Open Target: 0.185877
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1500', 'acc close all 29.45857041251778', 'roc 0.49667129653289555']
+acc all 29.45857041251778 h_score 0.49667129653289555 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1600/10000 	 Loss Source: 0.9905 Loss Open: 0.5895 Loss Open Source Positive: 0.5965 Loss Open Source Negative: 0.5825 Loss Open Target: 0.181288
+Train 1700/10000 	 Loss Source: 1.1451 Loss Open: 0.5744 Loss Open Source Positive: 0.5815 Loss Open Source Negative: 0.5673 Loss Open Target: 0.179158
+Train 1800/10000 	 Loss Source: 0.9769 Loss Open: 0.5854 Loss Open Source Positive: 0.6193 Loss Open Source Negative: 0.5514 Loss Open Target: 0.177218
+Train 1900/10000 	 Loss Source: 1.3857 Loss Open: 0.6716 Loss Open Source Positive: 0.6992 Loss Open Source Negative: 0.6439 Loss Open Target: 0.179274
+Train 2000/10000 	 Loss Source: 1.1883 Loss Open: 0.6592 Loss Open Source Positive: 0.6807 Loss Open Source Negative: 0.6376 Loss Open Target: 0.172337
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2000', 'acc close all 29.37411095305832', 'roc 0.4699006898386642']
+acc all 29.37411095305832 h_score 0.4699006898386642 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2100/10000 	 Loss Source: 1.1466 Loss Open: 0.6181 Loss Open Source Positive: 0.6663 Loss Open Source Negative: 0.5699 Loss Open Target: 0.173213
+Train 2200/10000 	 Loss Source: 0.9809 Loss Open: 0.5903 Loss Open Source Positive: 0.6465 Loss Open Source Negative: 0.5342 Loss Open Target: 0.166786
+Train 2300/10000 	 Loss Source: 1.4389 Loss Open: 0.6890 Loss Open Source Positive: 0.8129 Loss Open Source Negative: 0.5651 Loss Open Target: 0.165230
+Train 2400/10000 	 Loss Source: 0.9105 Loss Open: 0.5607 Loss Open Source Positive: 0.4855 Loss Open Source Negative: 0.6358 Loss Open Target: 0.162753
+Train 2500/10000 	 Loss Source: 1.0783 Loss Open: 0.6063 Loss Open Source Positive: 0.6587 Loss Open Source Negative: 0.5538 Loss Open Target: 0.157172
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2500', 'acc close all 30.929943100995732', 'roc 0.49003206260828114']
+acc all 30.929943100995732 h_score 0.49003206260828114 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2600/10000 	 Loss Source: 0.8538 Loss Open: 0.5925 Loss Open Source Positive: 0.5932 Loss Open Source Negative: 0.5917 Loss Open Target: 0.153402
+Train 2700/10000 	 Loss Source: 0.8463 Loss Open: 0.5448 Loss Open Source Positive: 0.5456 Loss Open Source Negative: 0.5441 Loss Open Target: 0.154417
+Train 2800/10000 	 Loss Source: 1.1243 Loss Open: 0.6336 Loss Open Source Positive: 0.6072 Loss Open Source Negative: 0.6599 Loss Open Target: 0.156610
+Train 2900/10000 	 Loss Source: 0.7532 Loss Open: 0.5379 Loss Open Source Positive: 0.5224 Loss Open Source Negative: 0.5535 Loss Open Target: 0.152857
+Train 3000/10000 	 Loss Source: 1.0294 Loss Open: 0.6288 Loss Open Source Positive: 0.6386 Loss Open Source Negative: 0.6189 Loss Open Target: 0.154719
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3000', 'acc close all 30.605440967283073', 'roc 0.48422905960662377']
+acc all 30.605440967283073 h_score 0.48422905960662377 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3100/10000 	 Loss Source: 0.8617 Loss Open: 0.5575 Loss Open Source Positive: 0.5670 Loss Open Source Negative: 0.5480 Loss Open Target: 0.154638
+Train 3200/10000 	 Loss Source: 0.7371 Loss Open: 0.5656 Loss Open Source Positive: 0.5359 Loss Open Source Negative: 0.5953 Loss Open Target: 0.149102
+Train 3300/10000 	 Loss Source: 0.9383 Loss Open: 0.5661 Loss Open Source Positive: 0.5801 Loss Open Source Negative: 0.5520 Loss Open Target: 0.147836
+Train 3400/10000 	 Loss Source: 0.8436 Loss Open: 0.5456 Loss Open Source Positive: 0.5852 Loss Open Source Negative: 0.5060 Loss Open Target: 0.144867
+Train 3500/10000 	 Loss Source: 0.9149 Loss Open: 0.5318 Loss Open Source Positive: 0.5949 Loss Open Source Negative: 0.4686 Loss Open Target: 0.142567
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3500', 'acc close all 29.956436699857754', 'roc 0.4699739646849301']
+acc all 29.956436699857754 h_score 0.4699739646849301 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3600/10000 	 Loss Source: 0.9565 Loss Open: 0.5910 Loss Open Source Positive: 0.5965 Loss Open Source Negative: 0.5855 Loss Open Target: 0.143083
+Train 3700/10000 	 Loss Source: 0.9566 Loss Open: 0.5837 Loss Open Source Positive: 0.6173 Loss Open Source Negative: 0.5501 Loss Open Target: 0.144928
+Train 3800/10000 	 Loss Source: 1.0800 Loss Open: 0.6054 Loss Open Source Positive: 0.7286 Loss Open Source Negative: 0.4822 Loss Open Target: 0.139326
+Train 3900/10000 	 Loss Source: 0.9121 Loss Open: 0.5508 Loss Open Source Positive: 0.5433 Loss Open Source Negative: 0.5583 Loss Open Target: 0.139554
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 4000/10000 	 Loss Source: 0.6901 Loss Open: 0.5109 Loss Open Source Positive: 0.4884 Loss Open Source Negative: 0.5333 Loss Open Target: 0.143770
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4000', 'acc close all 31.205547652916074', 'roc 0.46654998348155924']
+acc all 31.205547652916074 h_score 0.46654998348155924 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4100/10000 	 Loss Source: 0.8473 Loss Open: 0.5591 Loss Open Source Positive: 0.6126 Loss Open Source Negative: 0.5056 Loss Open Target: 0.135993
+Train 4200/10000 	 Loss Source: 0.9449 Loss Open: 0.5669 Loss Open Source Positive: 0.5938 Loss Open Source Negative: 0.5399 Loss Open Target: 0.138573
+Train 4300/10000 	 Loss Source: 0.6023 Loss Open: 0.5343 Loss Open Source Positive: 0.5084 Loss Open Source Negative: 0.5603 Loss Open Target: 0.139354
+Train 4400/10000 	 Loss Source: 0.6224 Loss Open: 0.4872 Loss Open Source Positive: 0.4572 Loss Open Source Negative: 0.5172 Loss Open Target: 0.138223
+Train 4500/10000 	 Loss Source: 0.8863 Loss Open: 0.5159 Loss Open Source Positive: 0.6127 Loss Open Source Negative: 0.4192 Loss Open Target: 0.136187
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4500', 'acc close all 31.392247510668565', 'roc 0.4816546798474297']
+acc all 31.392247510668565 h_score 0.4816546798474297 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4600/10000 	 Loss Source: 0.6846 Loss Open: 0.5080 Loss Open Source Positive: 0.5463 Loss Open Source Negative: 0.4697 Loss Open Target: 0.135902
+Train 4700/10000 	 Loss Source: 1.0010 Loss Open: 0.6113 Loss Open Source Positive: 0.6840 Loss Open Source Negative: 0.5387 Loss Open Target: 0.133952
+Train 4800/10000 	 Loss Source: 0.7411 Loss Open: 0.4849 Loss Open Source Positive: 0.4808 Loss Open Source Negative: 0.4890 Loss Open Target: 0.133101
+Train 4900/10000 	 Loss Source: 0.6617 Loss Open: 0.5082 Loss Open Source Positive: 0.5217 Loss Open Source Negative: 0.4947 Loss Open Target: 0.132622
+Train 5000/10000 	 Loss Source: 0.8004 Loss Open: 0.4941 Loss Open Source Positive: 0.5063 Loss Open Source Negative: 0.4819 Loss Open Target: 0.129914
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5000', 'acc close all 31.50337837837838', 'roc 0.4813179947581805']
+acc all 31.50337837837838 h_score 0.4813179947581805 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5100/10000 	 Loss Source: 0.7544 Loss Open: 0.4924 Loss Open Source Positive: 0.5067 Loss Open Source Negative: 0.4781 Loss Open Target: 0.130704
+Train 5200/10000 	 Loss Source: 1.3447 Loss Open: 0.6248 Loss Open Source Positive: 0.7003 Loss Open Source Negative: 0.5493 Loss Open Target: 0.130927
+Train 5300/10000 	 Loss Source: 0.6036 Loss Open: 0.5387 Loss Open Source Positive: 0.5207 Loss Open Source Negative: 0.5567 Loss Open Target: 0.128237
+Train 5400/10000 	 Loss Source: 1.0061 Loss Open: 0.5881 Loss Open Source Positive: 0.6538 Loss Open Source Negative: 0.5224 Loss Open Target: 0.131344
+Train 5500/10000 	 Loss Source: 0.5438 Loss Open: 0.4337 Loss Open Source Positive: 0.3546 Loss Open Source Negative: 0.5127 Loss Open Target: 0.129638
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5500', 'acc close all 31.721194879089616', 'roc 0.480309366234418']
+acc all 31.721194879089616 h_score 0.480309366234418 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5600/10000 	 Loss Source: 0.7088 Loss Open: 0.4259 Loss Open Source Positive: 0.3976 Loss Open Source Negative: 0.4542 Loss Open Target: 0.126012
+Train 5700/10000 	 Loss Source: 1.0202 Loss Open: 0.5982 Loss Open Source Positive: 0.6606 Loss Open Source Negative: 0.5358 Loss Open Target: 0.124105
+Train 5800/10000 	 Loss Source: 0.9216 Loss Open: 0.5527 Loss Open Source Positive: 0.6098 Loss Open Source Negative: 0.4956 Loss Open Target: 0.128935
+Train 5900/10000 	 Loss Source: 0.8981 Loss Open: 0.5871 Loss Open Source Positive: 0.5790 Loss Open Source Negative: 0.5953 Loss Open Target: 0.126261
+Train 6000/10000 	 Loss Source: 0.7142 Loss Open: 0.5262 Loss Open Source Positive: 0.5639 Loss Open Source Negative: 0.4885 Loss Open Target: 0.129897
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6000', 'acc close all 31.98790896159317', 'roc 0.461846065329222']
+acc all 31.98790896159317 h_score 0.461846065329222 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 6100/10000 	 Loss Source: 0.6359 Loss Open: 0.4940 Loss Open Source Positive: 0.5495 Loss Open Source Negative: 0.4385 Loss Open Target: 0.127547
+Train 6200/10000 	 Loss Source: 0.5829 Loss Open: 0.4376 Loss Open Source Positive: 0.4680 Loss Open Source Negative: 0.4073 Loss Open Target: 0.126370
+Train 6300/10000 	 Loss Source: 0.5168 Loss Open: 0.4221 Loss Open Source Positive: 0.4087 Loss Open Source Negative: 0.4355 Loss Open Target: 0.124379
+Train 6400/10000 	 Loss Source: 0.8844 Loss Open: 0.5492 Loss Open Source Positive: 0.6351 Loss Open Source Negative: 0.4632 Loss Open Target: 0.123921
+Train 6500/10000 	 Loss Source: 0.4804 Loss Open: 0.4115 Loss Open Source Positive: 0.4163 Loss Open Source Negative: 0.4068 Loss Open Target: 0.126486
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6500', 'acc close all 31.867887624466572', 'roc 0.476853258692345']
+acc all 31.867887624466572 h_score 0.476853258692345 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6600/10000 	 Loss Source: 0.8074 Loss Open: 0.5271 Loss Open Source Positive: 0.4957 Loss Open Source Negative: 0.5586 Loss Open Target: 0.123109
+Train 6700/10000 	 Loss Source: 0.8620 Loss Open: 0.5708 Loss Open Source Positive: 0.5498 Loss Open Source Negative: 0.5919 Loss Open Target: 0.124953
+Train 6800/10000 	 Loss Source: 0.8173 Loss Open: 0.5510 Loss Open Source Positive: 0.6289 Loss Open Source Negative: 0.4732 Loss Open Target: 0.124852
+Train 6900/10000 	 Loss Source: 0.6039 Loss Open: 0.4717 Loss Open Source Positive: 0.4157 Loss Open Source Negative: 0.5277 Loss Open Target: 0.122606
+Train 7000/10000 	 Loss Source: 0.9412 Loss Open: 0.6223 Loss Open Source Positive: 0.6307 Loss Open Source Negative: 0.6138 Loss Open Target: 0.120938
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7000', 'acc close all 32.032361308677096', 'roc 0.45827556470905384']
+acc all 32.032361308677096 h_score 0.45827556470905384 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7100/10000 	 Loss Source: 0.7000 Loss Open: 0.5223 Loss Open Source Positive: 0.5132 Loss Open Source Negative: 0.5314 Loss Open Target: 0.121811
+Train 7200/10000 	 Loss Source: 0.8270 Loss Open: 0.5969 Loss Open Source Positive: 0.6816 Loss Open Source Negative: 0.5122 Loss Open Target: 0.125603
+Train 7300/10000 	 Loss Source: 0.8936 Loss Open: 0.5695 Loss Open Source Positive: 0.5909 Loss Open Source Negative: 0.5481 Loss Open Target: 0.116939
+Train 7400/10000 	 Loss Source: 1.3884 Loss Open: 0.6620 Loss Open Source Positive: 0.9062 Loss Open Source Negative: 0.4178 Loss Open Target: 0.119193
+Train 7500/10000 	 Loss Source: 0.6526 Loss Open: 0.4985 Loss Open Source Positive: 0.5389 Loss Open Source Negative: 0.4582 Loss Open Target: 0.123613
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7500', 'acc close all 32.227951635846374', 'roc 0.4719228061415659']
+acc all 32.227951635846374 h_score 0.4719228061415659 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7600/10000 	 Loss Source: 1.2834 Loss Open: 0.6220 Loss Open Source Positive: 0.6933 Loss Open Source Negative: 0.5507 Loss Open Target: 0.117404
+Train 7700/10000 	 Loss Source: 0.6373 Loss Open: 0.4748 Loss Open Source Positive: 0.4811 Loss Open Source Negative: 0.4685 Loss Open Target: 0.120788
+Train 7800/10000 	 Loss Source: 0.6930 Loss Open: 0.4608 Loss Open Source Positive: 0.5114 Loss Open Source Negative: 0.4102 Loss Open Target: 0.114908
+Train 7900/10000 	 Loss Source: 0.8517 Loss Open: 0.5146 Loss Open Source Positive: 0.5771 Loss Open Source Negative: 0.4520 Loss Open Target: 0.117758
+Train 8000/10000 	 Loss Source: 0.6898 Loss Open: 0.5449 Loss Open Source Positive: 0.6107 Loss Open Source Negative: 0.4791 Loss Open Target: 0.117217
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8000', 'acc close all 32.16127311522048', 'roc 0.4641956174845031']
+acc all 32.16127311522048 h_score 0.4641956174845031 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8100/10000 	 Loss Source: 0.6465 Loss Open: 0.4746 Loss Open Source Positive: 0.4721 Loss Open Source Negative: 0.4772 Loss Open Target: 0.113725
+Train 8200/10000 	 Loss Source: 0.5859 Loss Open: 0.4148 Loss Open Source Positive: 0.4208 Loss Open Source Negative: 0.4088 Loss Open Target: 0.116917
+Train 8300/10000 	 Loss Source: 0.5819 Loss Open: 0.4734 Loss Open Source Positive: 0.4561 Loss Open Source Negative: 0.4907 Loss Open Target: 0.114914
+Train 8400/10000 	 Loss Source: 0.7779 Loss Open: 0.5026 Loss Open Source Positive: 0.5081 Loss Open Source Negative: 0.4971 Loss Open Target: 0.112455
+Train 8500/10000 	 Loss Source: 1.2235 Loss Open: 0.6493 Loss Open Source Positive: 0.8510 Loss Open Source Negative: 0.4476 Loss Open Target: 0.115309
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8500', 'acc close all 32.0945945945946', 'roc 0.47690853461448945']
+acc all 32.0945945945946 h_score 0.47690853461448945 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8600/10000 	 Loss Source: 0.7444 Loss Open: 0.5212 Loss Open Source Positive: 0.5932 Loss Open Source Negative: 0.4492 Loss Open Target: 0.114089
+Train 8700/10000 	 Loss Source: 0.8483 Loss Open: 0.5311 Loss Open Source Positive: 0.5678 Loss Open Source Negative: 0.4944 Loss Open Target: 0.114544
+Train 8800/10000 	 Loss Source: 0.9055 Loss Open: 0.5530 Loss Open Source Positive: 0.6188 Loss Open Source Negative: 0.4872 Loss Open Target: 0.115202
+Train 8900/10000 	 Loss Source: 0.9074 Loss Open: 0.5122 Loss Open Source Positive: 0.5646 Loss Open Source Negative: 0.4598 Loss Open Target: 0.114684
+Train 9000/10000 	 Loss Source: 0.8451 Loss Open: 0.5515 Loss Open Source Positive: 0.6421 Loss Open Source Negative: 0.4608 Loss Open Target: 0.114043
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9000', 'acc close all 31.903449502133714', 'roc 0.46445829354092627']
+acc all 31.903449502133714 h_score 0.46445829354092627 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9100/10000 	 Loss Source: 0.6503 Loss Open: 0.4815 Loss Open Source Positive: 0.4285 Loss Open Source Negative: 0.5345 Loss Open Target: 0.110797
+Train 9200/10000 	 Loss Source: 1.0278 Loss Open: 0.5860 Loss Open Source Positive: 0.7576 Loss Open Source Negative: 0.4143 Loss Open Target: 0.109748
+Train 9300/10000 	 Loss Source: 0.8915 Loss Open: 0.5350 Loss Open Source Positive: 0.5624 Loss Open Source Negative: 0.5075 Loss Open Target: 0.109901
+Train 9400/10000 	 Loss Source: 0.5491 Loss Open: 0.4934 Loss Open Source Positive: 0.4888 Loss Open Source Negative: 0.4979 Loss Open Target: 0.109177
+Train 9500/10000 	 Loss Source: 1.0513 Loss Open: 0.5803 Loss Open Source Positive: 0.6489 Loss Open Source Negative: 0.5117 Loss Open Target: 0.111893
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9500', 'acc close all 32.512446657183496', 'roc 0.4657934761363028']
+acc all 32.512446657183496 h_score 0.4657934761363028 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 9600/10000 	 Loss Source: 1.2217 Loss Open: 0.6334 Loss Open Source Positive: 0.8164 Loss Open Source Negative: 0.4505 Loss Open Target: 0.116058
+Train 9700/10000 	 Loss Source: 1.0284 Loss Open: 0.5867 Loss Open Source Positive: 0.7027 Loss Open Source Negative: 0.4708 Loss Open Target: 0.114287
+Train 9800/10000 	 Loss Source: 1.0231 Loss Open: 0.5208 Loss Open Source Positive: 0.6135 Loss Open Source Negative: 0.4282 Loss Open Target: 0.112153
+Train 9900/10000 	 Loss Source: 0.4905 Loss Open: 0.4254 Loss Open Source Positive: 0.4754 Loss Open Source Negative: 0.3753 Loss Open Target: 0.114316
+Train 10000/10000 	 Loss Source: 0.6044 Loss Open: 0.4450 Loss Open Source Positive: 0.4397 Loss Open Source Negative: 0.4503 Loss Open Target: 0.112882
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 10000', 'acc close all 32.03680654338549', 'roc 0.46917829946164896']
+acc all 32.03680654338549 h_score 0.46917829946164896 
+train_ovanet.py:54: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  conf = yaml.load(open(config_file))
+train_ovanet.py:55: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  save_config = yaml.load(open(config_file))
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/torchvision/transforms/transforms.py:280: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+use balanced loader
+record in record/ovanet/image_to_objectnet_imagenet_c_r_o/train_ovanet_/data1/jiaming/data/imagenet/train/2objectnet_c_r_o_resnet50_hp_0.05 
+selected network resnet50
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+train start!
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 0/10000 	 Loss Source: 7.0193 Loss Open: 1.9375 Loss Open Source Positive: 0.9092 Loss Open Source Negative: 2.9659 Loss Open Target: 0.618736
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 0', 'acc close all 0.06667852062588904', 'roc 0.5231074698956262']
+acc all 0.06667852062588904 h_score 0.5231074698956262 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 100/10000 	 Loss Source: 5.4476 Loss Open: 1.0292 Loss Open Source Positive: 0.7793 Loss Open Source Negative: 1.2791 Loss Open Target: 0.547291
+Train 200/10000 	 Loss Source: 4.4423 Loss Open: 0.9438 Loss Open Source Positive: 0.7682 Loss Open Source Negative: 1.1195 Loss Open Target: 0.437174
+Train 300/10000 	 Loss Source: 3.4407 Loss Open: 0.8578 Loss Open Source Positive: 0.7501 Loss Open Source Negative: 0.9655 Loss Open Target: 0.358043
+Train 400/10000 	 Loss Source: 2.4359 Loss Open: 0.8270 Loss Open Source Positive: 0.8711 Loss Open Source Negative: 0.7830 Loss Open Target: 0.307120
+Train 500/10000 	 Loss Source: 2.2835 Loss Open: 0.7961 Loss Open Source Positive: 0.8676 Loss Open Source Negative: 0.7246 Loss Open Target: 0.276328
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 500', 'acc close all 23.15522759601707', 'roc 0.49358508656074673']
+acc all 23.15522759601707 h_score 0.49358508656074673 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 600/10000 	 Loss Source: 2.1852 Loss Open: 0.7938 Loss Open Source Positive: 0.8299 Loss Open Source Negative: 0.7577 Loss Open Target: 0.254324
+Train 700/10000 	 Loss Source: 1.8050 Loss Open: 0.7131 Loss Open Source Positive: 0.7553 Loss Open Source Negative: 0.6709 Loss Open Target: 0.241204
+Train 800/10000 	 Loss Source: 1.7959 Loss Open: 0.7683 Loss Open Source Positive: 0.7694 Loss Open Source Negative: 0.7673 Loss Open Target: 0.225702
+Train 900/10000 	 Loss Source: 1.5545 Loss Open: 0.7157 Loss Open Source Positive: 0.7449 Loss Open Source Negative: 0.6865 Loss Open Target: 0.215400
+Train 1000/10000 	 Loss Source: 1.1122 Loss Open: 0.6746 Loss Open Source Positive: 0.5663 Loss Open Source Negative: 0.7829 Loss Open Target: 0.209554
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1000', 'acc close all 28.516180654338548', 'roc 0.4824884016688953']
+acc all 28.516180654338548 h_score 0.4824884016688953 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1100/10000 	 Loss Source: 1.4537 Loss Open: 0.6922 Loss Open Source Positive: 0.7990 Loss Open Source Negative: 0.5854 Loss Open Target: 0.196943
+Train 1200/10000 	 Loss Source: 1.4314 Loss Open: 0.6905 Loss Open Source Positive: 0.7836 Loss Open Source Negative: 0.5973 Loss Open Target: 0.191711
+Train 1300/10000 	 Loss Source: 1.4462 Loss Open: 0.7233 Loss Open Source Positive: 0.7840 Loss Open Source Negative: 0.6627 Loss Open Target: 0.185829
+Train 1400/10000 	 Loss Source: 1.0015 Loss Open: 0.6241 Loss Open Source Positive: 0.6417 Loss Open Source Negative: 0.6065 Loss Open Target: 0.185541
+Train 1500/10000 	 Loss Source: 1.2819 Loss Open: 0.6574 Loss Open Source Positive: 0.7700 Loss Open Source Negative: 0.5448 Loss Open Target: 0.181616
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 1500', 'acc close all 28.498399715504977', 'roc 0.48633090327169276']
+acc all 28.498399715504977 h_score 0.48633090327169276 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 1600/10000 	 Loss Source: 1.2450 Loss Open: 0.6386 Loss Open Source Positive: 0.7607 Loss Open Source Negative: 0.5164 Loss Open Target: 0.172470
+Train 1700/10000 	 Loss Source: 1.4099 Loss Open: 0.7664 Loss Open Source Positive: 0.9263 Loss Open Source Negative: 0.6065 Loss Open Target: 0.169801
+Train 1800/10000 	 Loss Source: 1.3416 Loss Open: 0.6754 Loss Open Source Positive: 0.7886 Loss Open Source Negative: 0.5621 Loss Open Target: 0.165539
+Train 1900/10000 	 Loss Source: 1.1791 Loss Open: 0.6461 Loss Open Source Positive: 0.7675 Loss Open Source Negative: 0.5247 Loss Open Target: 0.164544
+Train 2000/10000 	 Loss Source: 1.0224 Loss Open: 0.6083 Loss Open Source Positive: 0.6345 Loss Open Source Negative: 0.5821 Loss Open Target: 0.162442
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2000', 'acc close all 29.298541963015648', 'roc 0.48511894669993283']
+acc all 29.298541963015648 h_score 0.48511894669993283 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2100/10000 	 Loss Source: 0.9892 Loss Open: 0.5896 Loss Open Source Positive: 0.6194 Loss Open Source Negative: 0.5597 Loss Open Target: 0.158509
+Train 2200/10000 	 Loss Source: 1.2710 Loss Open: 0.6000 Loss Open Source Positive: 0.6779 Loss Open Source Negative: 0.5221 Loss Open Target: 0.157303
+Train 2300/10000 	 Loss Source: 0.8491 Loss Open: 0.6012 Loss Open Source Positive: 0.6272 Loss Open Source Negative: 0.5753 Loss Open Target: 0.155586
+Train 2400/10000 	 Loss Source: 1.2096 Loss Open: 0.6360 Loss Open Source Positive: 0.7323 Loss Open Source Negative: 0.5396 Loss Open Target: 0.151340
+Train 2500/10000 	 Loss Source: 1.0631 Loss Open: 0.6082 Loss Open Source Positive: 0.5923 Loss Open Source Negative: 0.6241 Loss Open Target: 0.147741
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 2500', 'acc close all 30.872155049786628', 'roc 0.48410853947677235']
+acc all 30.872155049786628 h_score 0.48410853947677235 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 2600/10000 	 Loss Source: 0.8150 Loss Open: 0.5435 Loss Open Source Positive: 0.5455 Loss Open Source Negative: 0.5416 Loss Open Target: 0.151709
+Train 2700/10000 	 Loss Source: 1.0745 Loss Open: 0.5261 Loss Open Source Positive: 0.6001 Loss Open Source Negative: 0.4522 Loss Open Target: 0.147978
+Train 2800/10000 	 Loss Source: 1.1793 Loss Open: 0.6106 Loss Open Source Positive: 0.6399 Loss Open Source Negative: 0.5813 Loss Open Target: 0.146118
+Train 2900/10000 	 Loss Source: 1.4494 Loss Open: 0.6461 Loss Open Source Positive: 0.7831 Loss Open Source Negative: 0.5091 Loss Open Target: 0.143885
+Train 3000/10000 	 Loss Source: 0.6944 Loss Open: 0.5277 Loss Open Source Positive: 0.4940 Loss Open Source Negative: 0.5614 Loss Open Target: 0.145403
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3000', 'acc close all 31.107752489331435', 'roc 0.4880740173283772']
+acc all 31.107752489331435 h_score 0.4880740173283772 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3100/10000 	 Loss Source: 0.8072 Loss Open: 0.5381 Loss Open Source Positive: 0.5006 Loss Open Source Negative: 0.5755 Loss Open Target: 0.143305
+Train 3200/10000 	 Loss Source: 0.8333 Loss Open: 0.5899 Loss Open Source Positive: 0.5955 Loss Open Source Negative: 0.5843 Loss Open Target: 0.139876
+Train 3300/10000 	 Loss Source: 1.4072 Loss Open: 0.6204 Loss Open Source Positive: 0.7304 Loss Open Source Negative: 0.5104 Loss Open Target: 0.136612
+Train 3400/10000 	 Loss Source: 1.1099 Loss Open: 0.6549 Loss Open Source Positive: 0.7744 Loss Open Source Negative: 0.5355 Loss Open Target: 0.135380
+Train 3500/10000 	 Loss Source: 0.8258 Loss Open: 0.5541 Loss Open Source Positive: 0.6026 Loss Open Source Negative: 0.5056 Loss Open Target: 0.135737
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 3500', 'acc close all 30.476529160739688', 'roc 0.48824625219711004']
+acc all 30.476529160739688 h_score 0.48824625219711004 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 3600/10000 	 Loss Source: 0.9904 Loss Open: 0.5621 Loss Open Source Positive: 0.6368 Loss Open Source Negative: 0.4874 Loss Open Target: 0.133492
+Train 3700/10000 	 Loss Source: 0.6104 Loss Open: 0.4817 Loss Open Source Positive: 0.4448 Loss Open Source Negative: 0.5186 Loss Open Target: 0.134354
+Train 3800/10000 	 Loss Source: 1.1834 Loss Open: 0.6119 Loss Open Source Positive: 0.7199 Loss Open Source Negative: 0.5038 Loss Open Target: 0.128980
+Train 3900/10000 	 Loss Source: 1.3764 Loss Open: 0.6462 Loss Open Source Positive: 0.7383 Loss Open Source Negative: 0.5542 Loss Open Target: 0.131637
+Train 4000/10000 	 Loss Source: 1.0478 Loss Open: 0.6565 Loss Open Source Positive: 0.7197 Loss Open Source Negative: 0.5933 Loss Open Target: 0.128718
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4000', 'acc close all 30.196479374110954', 'roc 0.4895865400382056']
+acc all 30.196479374110954 h_score 0.4895865400382056 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 131072.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 131072.0
+Train 4100/10000 	 Loss Source: 0.5078 Loss Open: 0.4757 Loss Open Source Positive: 0.3974 Loss Open Source Negative: 0.5540 Loss Open Target: 0.131556
+Train 4200/10000 	 Loss Source: 0.6763 Loss Open: 0.4999 Loss Open Source Positive: 0.5063 Loss Open Source Negative: 0.4936 Loss Open Target: 0.129518
+Train 4300/10000 	 Loss Source: 0.7689 Loss Open: 0.4827 Loss Open Source Positive: 0.4642 Loss Open Source Negative: 0.5013 Loss Open Target: 0.126682
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 4400/10000 	 Loss Source: 0.7527 Loss Open: 0.4475 Loss Open Source Positive: 0.4236 Loss Open Source Negative: 0.4713 Loss Open Target: 0.126640
+Train 4500/10000 	 Loss Source: 1.0467 Loss Open: 0.6049 Loss Open Source Positive: 0.6795 Loss Open Source Negative: 0.5302 Loss Open Target: 0.123844
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 4500', 'acc close all 30.7699146514936', 'roc 0.4847820345426753']
+acc all 30.7699146514936 h_score 0.4847820345426753 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 4600/10000 	 Loss Source: 0.8151 Loss Open: 0.5496 Loss Open Source Positive: 0.6165 Loss Open Source Negative: 0.4826 Loss Open Target: 0.126989
+Train 4700/10000 	 Loss Source: 0.8563 Loss Open: 0.5239 Loss Open Source Positive: 0.5978 Loss Open Source Negative: 0.4500 Loss Open Target: 0.121519
+Train 4800/10000 	 Loss Source: 0.7689 Loss Open: 0.5345 Loss Open Source Positive: 0.6022 Loss Open Source Negative: 0.4668 Loss Open Target: 0.123044
+Train 4900/10000 	 Loss Source: 0.9900 Loss Open: 0.5739 Loss Open Source Positive: 0.6605 Loss Open Source Negative: 0.4874 Loss Open Target: 0.120840
+Train 5000/10000 	 Loss Source: 0.8337 Loss Open: 0.5701 Loss Open Source Positive: 0.5175 Loss Open Source Negative: 0.6227 Loss Open Target: 0.124325
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5000', 'acc close all 32.24573257467994', 'roc 0.4770314162516267']
+acc all 32.24573257467994 h_score 0.4770314162516267 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5100/10000 	 Loss Source: 0.7168 Loss Open: 0.5212 Loss Open Source Positive: 0.4529 Loss Open Source Negative: 0.5894 Loss Open Target: 0.119577
+Train 5200/10000 	 Loss Source: 1.1788 Loss Open: 0.5503 Loss Open Source Positive: 0.5880 Loss Open Source Negative: 0.5127 Loss Open Target: 0.122398
+Train 5300/10000 	 Loss Source: 0.9356 Loss Open: 0.4721 Loss Open Source Positive: 0.4407 Loss Open Source Negative: 0.5035 Loss Open Target: 0.120124
+Train 5400/10000 	 Loss Source: 0.8931 Loss Open: 0.5803 Loss Open Source Positive: 0.5884 Loss Open Source Negative: 0.5722 Loss Open Target: 0.117495
+Train 5500/10000 	 Loss Source: 1.0414 Loss Open: 0.5893 Loss Open Source Positive: 0.6802 Loss Open Source Negative: 0.4984 Loss Open Target: 0.121246
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 5500', 'acc close all 31.823435277382647', 'roc 0.4811963809174225']
+acc all 31.823435277382647 h_score 0.4811963809174225 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 5600/10000 	 Loss Source: 0.8979 Loss Open: 0.5513 Loss Open Source Positive: 0.6191 Loss Open Source Negative: 0.4834 Loss Open Target: 0.117733
+Train 5700/10000 	 Loss Source: 0.9004 Loss Open: 0.6027 Loss Open Source Positive: 0.6250 Loss Open Source Negative: 0.5803 Loss Open Target: 0.116034
+Train 5800/10000 	 Loss Source: 0.9503 Loss Open: 0.5794 Loss Open Source Positive: 0.6505 Loss Open Source Negative: 0.5083 Loss Open Target: 0.117234
+Train 5900/10000 	 Loss Source: 1.0322 Loss Open: 0.6103 Loss Open Source Positive: 0.7228 Loss Open Source Negative: 0.4978 Loss Open Target: 0.116941
+Train 6000/10000 	 Loss Source: 0.8695 Loss Open: 0.5771 Loss Open Source Positive: 0.6604 Loss Open Source Negative: 0.4937 Loss Open Target: 0.115181
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6000', 'acc close all 30.863264580369844', 'roc 0.4719224352638191']
+acc all 30.863264580369844 h_score 0.4719224352638191 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6100/10000 	 Loss Source: 0.9712 Loss Open: 0.5399 Loss Open Source Positive: 0.6587 Loss Open Source Negative: 0.4210 Loss Open Target: 0.118093
+Train 6200/10000 	 Loss Source: 0.9340 Loss Open: 0.6245 Loss Open Source Positive: 0.6277 Loss Open Source Negative: 0.6212 Loss Open Target: 0.114341
+Train 6300/10000 	 Loss Source: 0.7945 Loss Open: 0.5499 Loss Open Source Positive: 0.6358 Loss Open Source Negative: 0.4641 Loss Open Target: 0.115264
+Train 6400/10000 	 Loss Source: 0.9371 Loss Open: 0.5442 Loss Open Source Positive: 0.6422 Loss Open Source Negative: 0.4463 Loss Open Target: 0.112201
+Train 6500/10000 	 Loss Source: 1.0213 Loss Open: 0.5959 Loss Open Source Positive: 0.6871 Loss Open Source Negative: 0.5048 Loss Open Target: 0.112406
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 6500', 'acc close all 31.26333570412518', 'roc 0.45855396900951606']
+acc all 31.26333570412518 h_score 0.45855396900951606 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 6600/10000 	 Loss Source: 1.0309 Loss Open: 0.5746 Loss Open Source Positive: 0.7307 Loss Open Source Negative: 0.4186 Loss Open Target: 0.113092
+Train 6700/10000 	 Loss Source: 0.8235 Loss Open: 0.5268 Loss Open Source Positive: 0.5282 Loss Open Source Negative: 0.5254 Loss Open Target: 0.112288
+Train 6800/10000 	 Loss Source: 0.7101 Loss Open: 0.5153 Loss Open Source Positive: 0.5715 Loss Open Source Negative: 0.4591 Loss Open Target: 0.111050
+Train 6900/10000 	 Loss Source: 0.3791 Loss Open: 0.4017 Loss Open Source Positive: 0.3316 Loss Open Source Negative: 0.4718 Loss Open Target: 0.112380
+Train 7000/10000 	 Loss Source: 0.7270 Loss Open: 0.5058 Loss Open Source Positive: 0.5340 Loss Open Source Negative: 0.4776 Loss Open Target: 0.108080
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7000', 'acc close all 31.76120199146515', 'roc 0.473689255220566']
+acc all 31.76120199146515 h_score 0.473689255220566 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7100/10000 	 Loss Source: 0.9702 Loss Open: 0.5832 Loss Open Source Positive: 0.6349 Loss Open Source Negative: 0.5315 Loss Open Target: 0.112732
+Train 7200/10000 	 Loss Source: 0.5530 Loss Open: 0.4775 Loss Open Source Positive: 0.5795 Loss Open Source Negative: 0.3754 Loss Open Target: 0.109222
+Train 7300/10000 	 Loss Source: 0.5638 Loss Open: 0.4812 Loss Open Source Positive: 0.4933 Loss Open Source Negative: 0.4691 Loss Open Target: 0.109640
+Train 7400/10000 	 Loss Source: 0.9497 Loss Open: 0.6105 Loss Open Source Positive: 0.7117 Loss Open Source Negative: 0.5093 Loss Open Target: 0.107353
+Train 7500/10000 	 Loss Source: 0.8417 Loss Open: 0.5401 Loss Open Source Positive: 0.6042 Loss Open Source Negative: 0.4760 Loss Open Target: 0.107562
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 7500', 'acc close all 31.89900426742532', 'roc 0.46956346357066203']
+acc all 31.89900426742532 h_score 0.46956346357066203 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 7600/10000 	 Loss Source: 0.5476 Loss Open: 0.4387 Loss Open Source Positive: 0.4786 Loss Open Source Negative: 0.3989 Loss Open Target: 0.107941
+Train 7700/10000 	 Loss Source: 0.6770 Loss Open: 0.4473 Loss Open Source Positive: 0.5138 Loss Open Source Negative: 0.3808 Loss Open Target: 0.107647
+Train 7800/10000 	 Loss Source: 0.8822 Loss Open: 0.5165 Loss Open Source Positive: 0.5920 Loss Open Source Negative: 0.4410 Loss Open Target: 0.108974
+Train 7900/10000 	 Loss Source: 0.7118 Loss Open: 0.5066 Loss Open Source Positive: 0.5571 Loss Open Source Negative: 0.4562 Loss Open Target: 0.104871
+Train 8000/10000 	 Loss Source: 0.9212 Loss Open: 0.5697 Loss Open Source Positive: 0.6401 Loss Open Source Negative: 0.4994 Loss Open Target: 0.105727
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8000', 'acc close all 32.31241109530583', 'roc 0.47080560883412026']
+acc all 32.31241109530583 h_score 0.47080560883412026 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8100/10000 	 Loss Source: 1.0102 Loss Open: 0.5890 Loss Open Source Positive: 0.6464 Loss Open Source Negative: 0.5316 Loss Open Target: 0.104216
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 65536.0
+Train 8200/10000 	 Loss Source: 0.5308 Loss Open: 0.4384 Loss Open Source Positive: 0.3567 Loss Open Source Negative: 0.5202 Loss Open Target: 0.108503
+Train 8300/10000 	 Loss Source: 0.8916 Loss Open: 0.5359 Loss Open Source Positive: 0.6201 Loss Open Source Negative: 0.4516 Loss Open Target: 0.103381
+Train 8400/10000 	 Loss Source: 0.5717 Loss Open: 0.4849 Loss Open Source Positive: 0.4837 Loss Open Source Negative: 0.4861 Loss Open Target: 0.109202
+Train 8500/10000 	 Loss Source: 0.7322 Loss Open: 0.4647 Loss Open Source Positive: 0.5515 Loss Open Source Negative: 0.3779 Loss Open Target: 0.104086
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 8500', 'acc close all 32.04125177809388', 'roc 0.4728540612415134']
+acc all 32.04125177809388 h_score 0.4728540612415134 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 8600/10000 	 Loss Source: 1.0206 Loss Open: 0.5885 Loss Open Source Positive: 0.7232 Loss Open Source Negative: 0.4539 Loss Open Target: 0.104976
+Train 8700/10000 	 Loss Source: 0.6632 Loss Open: 0.4929 Loss Open Source Positive: 0.5036 Loss Open Source Negative: 0.4822 Loss Open Target: 0.106312
+Train 8800/10000 	 Loss Source: 0.9235 Loss Open: 0.5303 Loss Open Source Positive: 0.6466 Loss Open Source Negative: 0.4140 Loss Open Target: 0.103106
+Train 8900/10000 	 Loss Source: 0.6743 Loss Open: 0.4756 Loss Open Source Positive: 0.5193 Loss Open Source Negative: 0.4319 Loss Open Target: 0.106694
+Train 9000/10000 	 Loss Source: 0.8613 Loss Open: 0.5208 Loss Open Source Positive: 0.5540 Loss Open Source Negative: 0.4877 Loss Open Target: 0.102746
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9000', 'acc close all 32.112375533428164', 'roc 0.4795177844508187']
+acc all 32.112375533428164 h_score 0.4795177844508187 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9100/10000 	 Loss Source: 0.4897 Loss Open: 0.4060 Loss Open Source Positive: 0.4128 Loss Open Source Negative: 0.3993 Loss Open Target: 0.102438
+Train 9200/10000 	 Loss Source: 1.0795 Loss Open: 0.5437 Loss Open Source Positive: 0.7008 Loss Open Source Negative: 0.3866 Loss Open Target: 0.101921
+Train 9300/10000 	 Loss Source: 0.7407 Loss Open: 0.5310 Loss Open Source Positive: 0.5109 Loss Open Source Negative: 0.5511 Loss Open Target: 0.104990
+Train 9400/10000 	 Loss Source: 1.1599 Loss Open: 0.6419 Loss Open Source Positive: 0.7031 Loss Open Source Negative: 0.5807 Loss Open Target: 0.102187
+Train 9500/10000 	 Loss Source: 0.7524 Loss Open: 0.5316 Loss Open Source Positive: 0.5569 Loss Open Source Negative: 0.5063 Loss Open Target: 0.104130
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 9500', 'acc close all 32.00124466571835', 'roc 0.47580462456999373']
+acc all 32.00124466571835 h_score 0.47580462456999373 
+/data1/sungy/project/visda21-dev/utils/loss.py:21: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  label_range = torch.range(0, out_open.size(0) - 1).long()
+Train 9600/10000 	 Loss Source: 0.9950 Loss Open: 0.5867 Loss Open Source Positive: 0.6851 Loss Open Source Negative: 0.4882 Loss Open Target: 0.101259
+Train 9700/10000 	 Loss Source: 0.7816 Loss Open: 0.5242 Loss Open Source Positive: 0.5982 Loss Open Source Negative: 0.4503 Loss Open Target: 0.099445
+Train 9800/10000 	 Loss Source: 0.7088 Loss Open: 0.5220 Loss Open Source Positive: 0.4018 Loss Open Source Negative: 0.6422 Loss Open Target: 0.101258
+Train 9900/10000 	 Loss Source: 0.5385 Loss Open: 0.4466 Loss Open Source Positive: 0.4646 Loss Open Source Negative: 0.4285 Loss Open Target: 0.101263
+Train 10000/10000 	 Loss Source: 0.4413 Loss Open: 0.4351 Loss Open Source Positive: 0.3731 Loss Open Source Negative: 0.4972 Loss Open Target: 0.101597
+/data1/sungy/anaconda/envs/pytorch1.7/lib/python3.6/site-packages/apex-0.1-py3.6.egg/apex/amp/wrap.py:28: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return orig_fn(*new_args, **kwargs)
+/data1/sungy/project/visda21-dev/eval.py:37: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  tmp_range = torch.range(0, out_t.size(0)-1).long().cuda()
+['step 10000', 'acc close all 32.370199146514935', 'roc 0.4642309757578561']
+acc all 32.370199146514935 h_score 0.4642309757578561 

@@ -1,0 +1,145 @@
+Train 0/10000 	 Loss Source: 7.0010 Loss Open: 1.9064 Loss Open Source Positive: 0.8309 Loss Open Source Negative: 2.9819 Loss Open Target: 0.621742 Loss consistency: 0.2555 
+
+acc all 0.07112375533428165 h_score 0.4518014281487793 
+Train 100/10000 	 Loss Source: 6.1177 Loss Open: 1.2295 Loss Open Source Positive: 1.2131 Loss Open Source Negative: 1.2459 Loss Open Target: 0.516282 Loss consistency: 0.0509 
+Train 200/10000 	 Loss Source: 4.2469 Loss Open: 1.1209 Loss Open Source Positive: 1.3173 Loss Open Source Negative: 0.9245 Loss Open Target: 0.393527 Loss consistency: 0.0417 
+Train 300/10000 	 Loss Source: 4.0831 Loss Open: 0.9334 Loss Open Source Positive: 1.0876 Loss Open Source Negative: 0.7792 Loss Open Target: 0.319460 Loss consistency: 0.0639 
+Train 400/10000 	 Loss Source: 3.4559 Loss Open: 0.8598 Loss Open Source Positive: 1.0307 Loss Open Source Negative: 0.6888 Loss Open Target: 0.274090 Loss consistency: 0.0512 
+Train 500/10000 	 Loss Source: 2.4970 Loss Open: 0.8101 Loss Open Source Positive: 0.9309 Loss Open Source Negative: 0.6893 Loss Open Target: 0.250151 Loss consistency: 0.0502 
+
+acc all 21.657183499288763 h_score 0.5463028983687193 
+Train 600/10000 	 Loss Source: 2.3290 Loss Open: 0.7856 Loss Open Source Positive: 1.0030 Loss Open Source Negative: 0.5683 Loss Open Target: 0.226153 Loss consistency: 0.0357 
+Train 700/10000 	 Loss Source: 1.7683 Loss Open: 0.7627 Loss Open Source Positive: 0.8992 Loss Open Source Negative: 0.6263 Loss Open Target: 0.210515 Loss consistency: 0.0433 
+Train 800/10000 	 Loss Source: 2.1195 Loss Open: 0.7271 Loss Open Source Positive: 0.9027 Loss Open Source Negative: 0.5516 Loss Open Target: 0.201232 Loss consistency: 0.0288 
+Train 900/10000 	 Loss Source: 2.0586 Loss Open: 0.7287 Loss Open Source Positive: 0.8472 Loss Open Source Negative: 0.6101 Loss Open Target: 0.198493 Loss consistency: 0.0342 
+Train 1000/10000 	 Loss Source: 1.5711 Loss Open: 0.7534 Loss Open Source Positive: 0.8861 Loss Open Source Negative: 0.6207 Loss Open Target: 0.187761 Loss consistency: 0.0218 
+
+acc all 27.235953058321478 h_score 0.5230864623203952 
+Train 1100/10000 	 Loss Source: 1.3140 Loss Open: 0.6219 Loss Open Source Positive: 0.6292 Loss Open Source Negative: 0.6146 Loss Open Target: 0.184213 Loss consistency: 0.0182 
+Train 1200/10000 	 Loss Source: 1.5899 Loss Open: 0.7216 Loss Open Source Positive: 0.8201 Loss Open Source Negative: 0.6231 Loss Open Target: 0.176908 Loss consistency: 0.0290 
+Train 1300/10000 	 Loss Source: 1.3754 Loss Open: 0.6746 Loss Open Source Positive: 0.7737 Loss Open Source Negative: 0.5756 Loss Open Target: 0.177346 Loss consistency: 0.0215 
+Train 1400/10000 	 Loss Source: 1.5509 Loss Open: 0.7517 Loss Open Source Positive: 0.9025 Loss Open Source Negative: 0.6009 Loss Open Target: 0.168496 Loss consistency: 0.0215 
+Train 1500/10000 	 Loss Source: 1.2715 Loss Open: 0.6372 Loss Open Source Positive: 0.7029 Loss Open Source Negative: 0.5715 Loss Open Target: 0.167025 Loss consistency: 0.0238 
+
+acc all 29.03182788051209 h_score 0.5221690432310846 
+Train 1600/10000 	 Loss Source: 1.5346 Loss Open: 0.7285 Loss Open Source Positive: 0.8896 Loss Open Source Negative: 0.5674 Loss Open Target: 0.165987 Loss consistency: 0.0197 
+Train 1700/10000 	 Loss Source: 1.5185 Loss Open: 0.7163 Loss Open Source Positive: 0.8243 Loss Open Source Negative: 0.6084 Loss Open Target: 0.165118 Loss consistency: 0.0176 
+Train 1800/10000 	 Loss Source: 1.4394 Loss Open: 0.7020 Loss Open Source Positive: 0.8857 Loss Open Source Negative: 0.5182 Loss Open Target: 0.161946 Loss consistency: 0.0230 
+Train 1900/10000 	 Loss Source: 1.2559 Loss Open: 0.6713 Loss Open Source Positive: 0.6860 Loss Open Source Negative: 0.6567 Loss Open Target: 0.158741 Loss consistency: 0.0170 
+Train 2000/10000 	 Loss Source: 1.1280 Loss Open: 0.6467 Loss Open Source Positive: 0.7133 Loss Open Source Negative: 0.5800 Loss Open Target: 0.155907 Loss consistency: 0.0201 
+
+acc all 30.8277027027027 h_score 0.5142472875666763 
+Train 2100/10000 	 Loss Source: 1.4066 Loss Open: 0.6943 Loss Open Source Positive: 0.7833 Loss Open Source Negative: 0.6053 Loss Open Target: 0.153318 Loss consistency: 0.0180 
+Train 2200/10000 	 Loss Source: 1.0648 Loss Open: 0.5764 Loss Open Source Positive: 0.6111 Loss Open Source Negative: 0.5416 Loss Open Target: 0.149814 Loss consistency: 0.0187 
+Train 2300/10000 	 Loss Source: 1.0304 Loss Open: 0.6198 Loss Open Source Positive: 0.6364 Loss Open Source Negative: 0.6033 Loss Open Target: 0.149078 Loss consistency: 0.0168 
+Train 2400/10000 	 Loss Source: 1.2457 Loss Open: 0.6133 Loss Open Source Positive: 0.6404 Loss Open Source Negative: 0.5863 Loss Open Target: 0.147299 Loss consistency: 0.0143 
+Train 2500/10000 	 Loss Source: 0.9909 Loss Open: 0.5681 Loss Open Source Positive: 0.6138 Loss Open Source Negative: 0.5223 Loss Open Target: 0.143960 Loss consistency: 0.0171 
+
+acc all 30.356507823613086 h_score 0.5105826559036835 
+Train 2600/10000 	 Loss Source: 0.7574 Loss Open: 0.5568 Loss Open Source Positive: 0.5011 Loss Open Source Negative: 0.6124 Loss Open Target: 0.146932 Loss consistency: 0.0122 
+Train 2700/10000 	 Loss Source: 1.1044 Loss Open: 0.6237 Loss Open Source Positive: 0.7230 Loss Open Source Negative: 0.5244 Loss Open Target: 0.145763 Loss consistency: 0.0156 
+Train 2800/10000 	 Loss Source: 1.4364 Loss Open: 0.7135 Loss Open Source Positive: 0.9075 Loss Open Source Negative: 0.5194 Loss Open Target: 0.142792 Loss consistency: 0.0166 
+Train 2900/10000 	 Loss Source: 0.8168 Loss Open: 0.6059 Loss Open Source Positive: 0.5550 Loss Open Source Negative: 0.6568 Loss Open Target: 0.144121 Loss consistency: 0.0239 
+Train 3000/10000 	 Loss Source: 1.0348 Loss Open: 0.5833 Loss Open Source Positive: 0.6827 Loss Open Source Negative: 0.4839 Loss Open Target: 0.142293 Loss consistency: 0.0148 
+
+acc all 30.520981507823613 h_score 0.516846569117443 
+Train 3100/10000 	 Loss Source: 1.0066 Loss Open: 0.5656 Loss Open Source Positive: 0.5565 Loss Open Source Negative: 0.5747 Loss Open Target: 0.142300 Loss consistency: 0.0096 
+Train 3200/10000 	 Loss Source: 0.8009 Loss Open: 0.5349 Loss Open Source Positive: 0.5796 Loss Open Source Negative: 0.4903 Loss Open Target: 0.137822 Loss consistency: 0.0079 
+Train 3300/10000 	 Loss Source: 1.4548 Loss Open: 0.6992 Loss Open Source Positive: 0.8747 Loss Open Source Negative: 0.5237 Loss Open Target: 0.139721 Loss consistency: 0.0105 
+Train 3400/10000 	 Loss Source: 1.2142 Loss Open: 0.6133 Loss Open Source Positive: 0.6794 Loss Open Source Negative: 0.5473 Loss Open Target: 0.139448 Loss consistency: 0.0139 
+Train 3500/10000 	 Loss Source: 1.1521 Loss Open: 0.5999 Loss Open Source Positive: 0.6806 Loss Open Source Negative: 0.5192 Loss Open Target: 0.137084 Loss consistency: 0.0113 
+
+acc all 30.543207681365576 h_score 0.5068442536292734 
+Train 3600/10000 	 Loss Source: 1.0685 Loss Open: 0.5833 Loss Open Source Positive: 0.6715 Loss Open Source Negative: 0.4950 Loss Open Target: 0.137323 Loss consistency: 0.0166 
+Train 3700/10000 	 Loss Source: 0.8150 Loss Open: 0.5644 Loss Open Source Positive: 0.5765 Loss Open Source Negative: 0.5524 Loss Open Target: 0.135400 Loss consistency: 0.0183 
+Train 3800/10000 	 Loss Source: 1.0240 Loss Open: 0.6121 Loss Open Source Positive: 0.6360 Loss Open Source Negative: 0.5882 Loss Open Target: 0.133650 Loss consistency: 0.0118 
+Train 3900/10000 	 Loss Source: 0.9854 Loss Open: 0.5739 Loss Open Source Positive: 0.6518 Loss Open Source Negative: 0.4961 Loss Open Target: 0.133630 Loss consistency: 0.0138 
+Train 4000/10000 	 Loss Source: 0.8773 Loss Open: 0.6049 Loss Open Source Positive: 0.5627 Loss Open Source Negative: 0.6471 Loss Open Target: 0.131902 Loss consistency: 0.0121 
+
+acc all 30.872155049786628 h_score 0.513193237872328 
+Train 4100/10000 	 Loss Source: 0.7930 Loss Open: 0.5159 Loss Open Source Positive: 0.5299 Loss Open Source Negative: 0.5019 Loss Open Target: 0.130911 Loss consistency: 0.0124 
+Train 4200/10000 	 Loss Source: 0.6554 Loss Open: 0.5323 Loss Open Source Positive: 0.5320 Loss Open Source Negative: 0.5327 Loss Open Target: 0.127753 Loss consistency: 0.0101 
+Train 4300/10000 	 Loss Source: 0.9548 Loss Open: 0.5611 Loss Open Source Positive: 0.6482 Loss Open Source Negative: 0.4739 Loss Open Target: 0.128042 Loss consistency: 0.0090 
+Train 4400/10000 	 Loss Source: 0.9567 Loss Open: 0.5599 Loss Open Source Positive: 0.6684 Loss Open Source Negative: 0.4514 Loss Open Target: 0.132009 Loss consistency: 0.0120 
+Train 4500/10000 	 Loss Source: 1.1769 Loss Open: 0.6062 Loss Open Source Positive: 0.6274 Loss Open Source Negative: 0.5849 Loss Open Target: 0.127001 Loss consistency: 0.0244 
+
+acc all 30.080903271692744 h_score 0.5033314623434048 
+Train 4600/10000 	 Loss Source: 0.9960 Loss Open: 0.5994 Loss Open Source Positive: 0.7296 Loss Open Source Negative: 0.4692 Loss Open Target: 0.127621 Loss consistency: 0.0101 
+Train 4700/10000 	 Loss Source: 0.7456 Loss Open: 0.5387 Loss Open Source Positive: 0.6213 Loss Open Source Negative: 0.4560 Loss Open Target: 0.125189 Loss consistency: 0.0137 
+Train 4800/10000 	 Loss Source: 0.6628 Loss Open: 0.4684 Loss Open Source Positive: 0.4636 Loss Open Source Negative: 0.4732 Loss Open Target: 0.127889 Loss consistency: 0.0132 
+Train 4900/10000 	 Loss Source: 1.0715 Loss Open: 0.5533 Loss Open Source Positive: 0.5874 Loss Open Source Negative: 0.5193 Loss Open Target: 0.128175 Loss consistency: 0.0149 
+Train 5000/10000 	 Loss Source: 0.7561 Loss Open: 0.5121 Loss Open Source Positive: 0.5699 Loss Open Source Negative: 0.4543 Loss Open Target: 0.124371 Loss consistency: 0.0144 
+
+acc all 30.956614509246087 h_score 0.4978693527580831 
+Train 5100/10000 	 Loss Source: 0.8444 Loss Open: 0.5157 Loss Open Source Positive: 0.5335 Loss Open Source Negative: 0.4978 Loss Open Target: 0.126658 Loss consistency: 0.0180 
+Train 5200/10000 	 Loss Source: 0.9285 Loss Open: 0.6285 Loss Open Source Positive: 0.6840 Loss Open Source Negative: 0.5730 Loss Open Target: 0.126017 Loss consistency: 0.0104 
+Train 5300/10000 	 Loss Source: 0.8805 Loss Open: 0.5417 Loss Open Source Positive: 0.5597 Loss Open Source Negative: 0.5237 Loss Open Target: 0.124137 Loss consistency: 0.0069 
+Train 5400/10000 	 Loss Source: 0.9717 Loss Open: 0.5748 Loss Open Source Positive: 0.5485 Loss Open Source Negative: 0.6011 Loss Open Target: 0.127213 Loss consistency: 0.0166 
+Train 5500/10000 	 Loss Source: 0.8784 Loss Open: 0.5719 Loss Open Source Positive: 0.6223 Loss Open Source Negative: 0.5215 Loss Open Target: 0.127773 Loss consistency: 0.0212 
+
+acc all 32.263513513513516 h_score 0.5125114472551897 
+Train 5600/10000 	 Loss Source: 0.7661 Loss Open: 0.5403 Loss Open Source Positive: 0.5279 Loss Open Source Negative: 0.5527 Loss Open Target: 0.124979 Loss consistency: 0.0138 
+Train 5700/10000 	 Loss Source: 0.9604 Loss Open: 0.6205 Loss Open Source Positive: 0.6908 Loss Open Source Negative: 0.5502 Loss Open Target: 0.120016 Loss consistency: 0.0102 
+Train 5800/10000 	 Loss Source: 0.9442 Loss Open: 0.5620 Loss Open Source Positive: 0.5921 Loss Open Source Negative: 0.5320 Loss Open Target: 0.122002 Loss consistency: 0.0076 
+Train 5900/10000 	 Loss Source: 0.6764 Loss Open: 0.5072 Loss Open Source Positive: 0.4973 Loss Open Source Negative: 0.5171 Loss Open Target: 0.121882 Loss consistency: 0.0111 
+Train 6000/10000 	 Loss Source: 1.3008 Loss Open: 0.6250 Loss Open Source Positive: 0.7640 Loss Open Source Negative: 0.4860 Loss Open Target: 0.121928 Loss consistency: 0.0160 
+
+acc all 31.427809388335703 h_score 0.4974493866923372 
+Train 6100/10000 	 Loss Source: 0.9995 Loss Open: 0.6285 Loss Open Source Positive: 0.7238 Loss Open Source Negative: 0.5333 Loss Open Target: 0.120985 Loss consistency: 0.0062 
+Train 6200/10000 	 Loss Source: 1.0159 Loss Open: 0.5753 Loss Open Source Positive: 0.6552 Loss Open Source Negative: 0.4955 Loss Open Target: 0.121773 Loss consistency: 0.0148 
+Train 6300/10000 	 Loss Source: 1.0279 Loss Open: 0.6310 Loss Open Source Positive: 0.7815 Loss Open Source Negative: 0.4806 Loss Open Target: 0.117370 Loss consistency: 0.0108 
+Train 6400/10000 	 Loss Source: 1.0005 Loss Open: 0.5987 Loss Open Source Positive: 0.7145 Loss Open Source Negative: 0.4830 Loss Open Target: 0.120037 Loss consistency: 0.0102 
+Train 6500/10000 	 Loss Source: 1.2598 Loss Open: 0.6450 Loss Open Source Positive: 0.7773 Loss Open Source Negative: 0.5127 Loss Open Target: 0.120800 Loss consistency: 0.0135 
+
+acc all 31.512268847795163 h_score 0.49700518111670955 
+Train 6600/10000 	 Loss Source: 0.9246 Loss Open: 0.5261 Loss Open Source Positive: 0.5320 Loss Open Source Negative: 0.5203 Loss Open Target: 0.117025 Loss consistency: 0.0122 
+Train 6700/10000 	 Loss Source: 0.8165 Loss Open: 0.5648 Loss Open Source Positive: 0.6128 Loss Open Source Negative: 0.5169 Loss Open Target: 0.119431 Loss consistency: 0.0069 
+Train 6800/10000 	 Loss Source: 0.9404 Loss Open: 0.5177 Loss Open Source Positive: 0.5684 Loss Open Source Negative: 0.4671 Loss Open Target: 0.117374 Loss consistency: 0.0135 
+Train 6900/10000 	 Loss Source: 1.4181 Loss Open: 0.6958 Loss Open Source Positive: 0.8507 Loss Open Source Negative: 0.5409 Loss Open Target: 0.118266 Loss consistency: 0.0116 
+Train 7000/10000 	 Loss Source: 1.0299 Loss Open: 0.5760 Loss Open Source Positive: 0.7051 Loss Open Source Negative: 0.4470 Loss Open Target: 0.118680 Loss consistency: 0.0123 
+
+acc all 30.845483641536273 h_score 0.4986730296975891 
+Train 7100/10000 	 Loss Source: 0.9067 Loss Open: 0.5308 Loss Open Source Positive: 0.5809 Loss Open Source Negative: 0.4807 Loss Open Target: 0.119951 Loss consistency: 0.0083 
+Train 7200/10000 	 Loss Source: 0.8261 Loss Open: 0.5896 Loss Open Source Positive: 0.5952 Loss Open Source Negative: 0.5839 Loss Open Target: 0.116834 Loss consistency: 0.0093 
+Train 7300/10000 	 Loss Source: 0.7570 Loss Open: 0.5074 Loss Open Source Positive: 0.5172 Loss Open Source Negative: 0.4977 Loss Open Target: 0.117364 Loss consistency: 0.0166 
+Train 7400/10000 	 Loss Source: 0.9207 Loss Open: 0.5215 Loss Open Source Positive: 0.6268 Loss Open Source Negative: 0.4162 Loss Open Target: 0.115459 Loss consistency: 0.0154 
+Train 7500/10000 	 Loss Source: 1.0980 Loss Open: 0.5419 Loss Open Source Positive: 0.6099 Loss Open Source Negative: 0.4738 Loss Open Target: 0.114026 Loss consistency: 0.0061 
+
+acc all 31.783428165007113 h_score 0.5047409794357525 
+Train 7600/10000 	 Loss Source: 0.7273 Loss Open: 0.5321 Loss Open Source Positive: 0.5183 Loss Open Source Negative: 0.5460 Loss Open Target: 0.116075 Loss consistency: 0.0109 
+Train 7700/10000 	 Loss Source: 0.9967 Loss Open: 0.6336 Loss Open Source Positive: 0.6534 Loss Open Source Negative: 0.6138 Loss Open Target: 0.116559 Loss consistency: 0.0164 
+Train 7800/10000 	 Loss Source: 1.5473 Loss Open: 0.6786 Loss Open Source Positive: 0.7689 Loss Open Source Negative: 0.5882 Loss Open Target: 0.114052 Loss consistency: 0.0151 
+Train 7900/10000 	 Loss Source: 0.7558 Loss Open: 0.5380 Loss Open Source Positive: 0.5454 Loss Open Source Negative: 0.5306 Loss Open Target: 0.115470 Loss consistency: 0.0157 
+Train 8000/10000 	 Loss Source: 0.7241 Loss Open: 0.5248 Loss Open Source Positive: 0.5338 Loss Open Source Negative: 0.5158 Loss Open Target: 0.114304 Loss consistency: 0.0075 
+
+acc all 31.525604551920342 h_score 0.5010510145519712 
+Train 8100/10000 	 Loss Source: 0.8511 Loss Open: 0.5918 Loss Open Source Positive: 0.5893 Loss Open Source Negative: 0.5944 Loss Open Target: 0.115192 Loss consistency: 0.0132 
+Train 8200/10000 	 Loss Source: 1.0939 Loss Open: 0.6078 Loss Open Source Positive: 0.7419 Loss Open Source Negative: 0.4736 Loss Open Target: 0.115195 Loss consistency: 0.0128 
+Train 8300/10000 	 Loss Source: 0.8320 Loss Open: 0.5720 Loss Open Source Positive: 0.6036 Loss Open Source Negative: 0.5404 Loss Open Target: 0.113375 Loss consistency: 0.0091 
+Train 8400/10000 	 Loss Source: 1.3067 Loss Open: 0.6253 Loss Open Source Positive: 0.7604 Loss Open Source Negative: 0.4901 Loss Open Target: 0.112071 Loss consistency: 0.0169 
+Train 8500/10000 	 Loss Source: 0.9171 Loss Open: 0.5395 Loss Open Source Positive: 0.5634 Loss Open Source Negative: 0.5156 Loss Open Target: 0.111594 Loss consistency: 0.0096 
+
+acc all 31.00551209103841 h_score 0.5017801110041638 
+Train 8600/10000 	 Loss Source: 0.5823 Loss Open: 0.4576 Loss Open Source Positive: 0.4098 Loss Open Source Negative: 0.5054 Loss Open Target: 0.112864 Loss consistency: 0.0140 
+Train 8700/10000 	 Loss Source: 0.8357 Loss Open: 0.5292 Loss Open Source Positive: 0.5385 Loss Open Source Negative: 0.5198 Loss Open Target: 0.113894 Loss consistency: 0.0098 
+Train 8800/10000 	 Loss Source: 0.5634 Loss Open: 0.4390 Loss Open Source Positive: 0.4152 Loss Open Source Negative: 0.4628 Loss Open Target: 0.109914 Loss consistency: 0.0125 
+Train 8900/10000 	 Loss Source: 0.7074 Loss Open: 0.5206 Loss Open Source Positive: 0.5441 Loss Open Source Negative: 0.4971 Loss Open Target: 0.114107 Loss consistency: 0.0170 
+Train 9000/10000 	 Loss Source: 1.0680 Loss Open: 0.6402 Loss Open Source Positive: 0.8313 Loss Open Source Negative: 0.4492 Loss Open Target: 0.112175 Loss consistency: 0.0164 
+
+acc all 32.06792318634424 h_score 0.500358506324843 
+Train 9100/10000 	 Loss Source: 0.4667 Loss Open: 0.4531 Loss Open Source Positive: 0.4634 Loss Open Source Negative: 0.4428 Loss Open Target: 0.111414 Loss consistency: 0.0076 
+Train 9200/10000 	 Loss Source: 0.3601 Loss Open: 0.3874 Loss Open Source Positive: 0.2741 Loss Open Source Negative: 0.5007 Loss Open Target: 0.111104 Loss consistency: 0.0081 
+Train 9300/10000 	 Loss Source: 0.7922 Loss Open: 0.5375 Loss Open Source Positive: 0.5929 Loss Open Source Negative: 0.4822 Loss Open Target: 0.116492 Loss consistency: 0.0117 
+Train 9400/10000 	 Loss Source: 0.8965 Loss Open: 0.6167 Loss Open Source Positive: 0.6288 Loss Open Source Negative: 0.6046 Loss Open Target: 0.111626 Loss consistency: 0.0137 
+Train 9500/10000 	 Loss Source: 0.7118 Loss Open: 0.5345 Loss Open Source Positive: 0.5807 Loss Open Source Negative: 0.4883 Loss Open Target: 0.106995 Loss consistency: 0.0133 
+
+acc all 32.2146159317212 h_score 0.49446752960785173 
+Train 9600/10000 	 Loss Source: 0.8946 Loss Open: 0.5381 Loss Open Source Positive: 0.6256 Loss Open Source Negative: 0.4506 Loss Open Target: 0.110128 Loss consistency: 0.0082 
+Train 9700/10000 	 Loss Source: 0.9747 Loss Open: 0.6228 Loss Open Source Positive: 0.6002 Loss Open Source Negative: 0.6455 Loss Open Target: 0.109804 Loss consistency: 0.0094 
+Train 9800/10000 	 Loss Source: 0.8804 Loss Open: 0.5007 Loss Open Source Positive: 0.5306 Loss Open Source Negative: 0.4707 Loss Open Target: 0.108866 Loss consistency: 0.0085 
+Train 9900/10000 	 Loss Source: 0.5499 Loss Open: 0.4775 Loss Open Source Positive: 0.4656 Loss Open Source Negative: 0.4893 Loss Open Target: 0.111644 Loss consistency: 0.0150 
+Train 10000/10000 	 Loss Source: 0.5307 Loss Open: 0.4120 Loss Open Source Positive: 0.3691 Loss Open Source Negative: 0.4550 Loss Open Target: 0.111354 Loss consistency: 0.0127 
+
+acc all 31.854551920341393 h_score 0.4981590423385559 
+
+best acc 32.263513513513516 h_score 0.5463028983687193 

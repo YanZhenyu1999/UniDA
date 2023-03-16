@@ -1,0 +1,5 @@
+#python train_ovanet.py --gpu_devices 6 --cds --cds_path ./checkpoints/CDS_Imagenet1k_imagenet1k.txt_objectnet_c_r_o.txt_epoch_0_15999.t7 --config ./configs/image_to_objectnet_imagenet_c_r_o.yaml --source_data /home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/ --target_data ./val_filelists/objectnet_c_r_o.txt --multi 0.01
+
+#python train_ovanet.py --gpu_devices 6 --cds --cds_path ./checkpoints/CDS_Imagenet1k_imagenet1k.txt_imagenet_c_r_o_filelist.txt_epoch_0_10999.t7 --config ./configs/image_to_imagenet_c_r_o.yaml --source_data /home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/ --target_data ./val_filelists/imagenet_c_r_o_filelist.txt --multi 0.01
+
+python train_ovanet.py --gpu_devices 6 --cds --cds_path ./checkpoints/CDS_Imagenet1k_imagenet1k.txt_objectnet_filelist.txt_epoch_0_4999.t7 --config ./configs/image_to_objectnet.yaml --source_data /home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/ --target_data ./val_filelists/objectnet_filelist.txt --multi 0.01

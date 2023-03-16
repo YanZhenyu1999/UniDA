@@ -1,0 +1,12 @@
+/home/shared/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/_2_objectnet_imagenet_c_r_o_filelist
+['step 0', 'acc close all 53.338371266002845', 'roc 0.4918626546151482']
+['step 1000', 'acc close all 53.338371266002845', 'roc 0.5808309391787138']
+['step 2000', 'acc close all 53.338371266002845', 'roc 0.5821447054764444']
+['step 3000', 'acc close all 53.338371266002845', 'roc 0.6175647072675569']
+['step 4000', 'acc close all 53.338371266002845', 'roc 0.5884743775853963']
+['step 5000', 'acc close all 53.338371266002845', 'roc 0.600366356822782']
+['step 6000', 'acc close all 53.338371266002845', 'roc 0.6238784354178621']
+['step 7000', 'acc close all 53.338371266002845', 'roc 0.609943517741217']
+['step 8000', 'acc close all 53.338371266002845', 'roc 0.6090343185138054']
+['step 9000', 'acc close all 53.338371266002845', 'roc 0.6190728854094939']
+['step 10000', 'acc close all 53.338371266002845', 'roc 0.6087608302357219']

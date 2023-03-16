@@ -1,0 +1,11 @@
+/home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/_2_objectnet_filelist
+['step 0', 'acc close all 0.0', 'roc 0.4686006711965027']
+['step 500', 'acc close all 7.511556240369799', 'roc 0.4879261488018988']
+['step 1000', 'acc close all 14.714946070878275', 'roc 0.5231839062178097']
+['step 1500', 'acc close all 13.154853620955317', 'roc 0.5111988741641089']
+['step 2000', 'acc close all 14.9653312788906', 'roc 0.5143382318992037']
+['step 2500', 'acc close all 14.48382126348228', 'roc 0.5318557632818354']
+['step 3000', 'acc close all 16.236517719568567', 'roc 0.5503648331433961']
+['step 3500', 'acc close all 16.178736517719567', 'roc 0.5390471685977218']
+['step 4000', 'acc close all 14.541602465331279', 'roc 0.5452948381648719']
+['step 4500', 'acc close all 14.676425269645609', 'roc 0.5354277337350515']
