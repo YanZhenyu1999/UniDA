@@ -1,0 +1,44 @@
+# UniDA运行说明
+
+### 运行实例
+
+```shell
+python train_ovanet.py --gpu_devices 6 --config ./configs/image_to_objectnet_imagenet_c_r_o.yaml --source_data /home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/ --target_data ./val_filelists/objectnet_c_r_o.txt --multi 0.05
+```
+
+- 运行./script/train.sh：即resnet50，不加载cds的改进ovanet效果
+- 运行./script/train_res50_cds.sh：即resnet50，加载cds的改进ovanet效果，注意加载cds时，需获取到对应的模型参数，以及给出路径
+- 运行./script/train_res152_cds.sh：即resnet152，加载cds的改进ovanet效果
+- 运行./script/train_volod3.sh：即volod3，不加载cds的改进ovanet效果（受限于计算资源，我们无法训练加载了cds的volod3，实验中采取的是冻结了参数的方法）
+
+### 运行参数设置
+
+--gpu_devices 显卡
+
+--cds 若要加入CDS预训练则加入该选项
+
+--cds_path 给出CDS预训练模型参数的存放路径
+
+- 加载CDS预训练权重情况下，验证改进OVANet部分的效果
+
+```shell
+python train_ovanet.py --gpu_devices 6 --cds --cds_path ./checkpoints/CDS_Imagenet1k_imagenet1k.txt_objectnet_c_r_o.txt_epoch_0_15999.t7 --config ./configs/image_to_objectnet_imagenet_c_r_o.yaml --source_data /home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/ --target_data ./val_filelists/objectnet_c_r_o.txt
+```
+
+--network 使用的backbone模型，可选择resnet50/resnet152/volod3等，同时可加载对应的CDS
+
+```shell
+python train_ovanet.py --gpu_devices 6 --network volod3 --config ./configs/image_to_objectnet_imagenet_c_r_o.yaml --source_data /home/yzy/imagenet-object-localization-challenge/ILSVRC/Data/CLS-LOC/train/ --target_data ./val_filelists/objectnet_c_r_o.txt
+```
+
+--config 代码参数文件路径
+
+--source_data  源域给出文件夹路径
+
+--target_data 目标域文件列表，其中目标域数据集放在./val_data/ 文件夹下
+
+--multi 熵最小化损失的权重，超参数，取值0.1/0.05/0.02/0.01
+
+### 运行结果处理
+
+可直接查看输出，或者在./record中查看日志
